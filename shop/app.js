@@ -13,7 +13,7 @@ const VENUES = {
   np: { name: "Nationals Park",     color: "var(--np)" },
 };
 
-// category -> mock product photo + label
+// category -> default product photo + label. A product may override with its own `photo`.
 const CATEGORIES = {
   tee:    { label: "T-Shirts",    photo: "assets/tshirt.svg" },
   hoodie: { label: "Hoodies",     photo: "assets/hoodie.svg" },
@@ -23,6 +23,8 @@ const CATEGORIES = {
 
 // status: "in" | "lastcall" | "soldout"
 const PRODUCTS = [
+  { id: 20, name: "Natives 25th Anniversary Tee", venue: "us", cat: "tee", price: 35, status: "in",
+    photo: "assets/tee-25th.webp" },
   { id: 1,  name: "Classic Logo Tee",          venue: "us", cat: "tee",    price: 28, status: "in" },
   { id: 2,  name: "Marquee Tee",               venue: "th", cat: "tee",    price: 32, status: "in" },
   { id: 3,  name: "Warehouse Tee",             venue: "ps", cat: "tee",    price: 28, status: "lastcall" },
@@ -37,10 +39,14 @@ const PRODUCTS = [
   { id: 12, name: "Soul Series Cap",           venue: "th", cat: "hat",    price: 32, status: "in" },
   { id: 13, name: "Trucker Cap",               venue: "ct", cat: "hat",    price: 30, status: "in" },
   { id: 14, name: "Cuffed Beanie",             venue: "ps", cat: "hat",    price: 26, status: "soldout" },
-  { id: 15, name: "Canvas Tote Bag",           venue: "us", cat: "acc",    price: 22, status: "in" },
   { id: 16, name: "Enamel Pin Set",            venue: "jj", cat: "acc",    price: 14, status: "in" },
   { id: 17, name: "Sticker Pack",              venue: "th", cat: "acc",    price: 10, status: "in" },
-  { id: 18, name: "Plaza Tote Bag",            venue: "np", cat: "acc",    price: 22, status: "lastcall" },
+  { id: 22, name: "Natives 25th Anniversary Tote", venue: "us", cat: "acc", price: 24, status: "in",
+    photo: "assets/tote-25th.webp", meta: "Heavyweight Canvas · 15&quot; × 16&quot;" },
+  { id: 19, name: "Natives 25th Anniversary Poster", venue: "us", cat: "acc", kind: "poster", price: 35, status: "in",
+    photo: "assets/posters/natives-poster.jpg" },
+  { id: 21, name: "Natives 25th Anniversary Sticker", venue: "us", cat: "acc", kind: "sticker", price: 5, status: "in",
+    photo: "assets/stickers/natives-sticker.png" },
 ];
 
 const STAMP = { soldout: "assets/sold-out.svg", lastcall: "assets/last-call.svg" };
@@ -81,16 +87,23 @@ function cardHTML(p) {
     ? `<img class="card__stamp" src="${STAMP[p.status]}" alt="${p.status === "soldout" ? "Sold out" : "Last call"}" />`
     : "";
   const soldout = p.status === "soldout";
+  const photo = p.photo || CATEGORIES[p.cat].photo;
+  const META = {
+    poster:  "Giclée Print · 18&quot; × 24&quot;",
+    sticker: "Die-Cut Vinyl · Weatherproof",
+  };
+  const meta = p.meta || META[p.kind] || "100% Cotton · Unisex · S–3XL";
+  const mediaMod = p.kind === "poster" ? "card__media--poster"
+                 : p.kind === "sticker" ? "card__media--sticker" : "";
   return `
     <article class="card ${soldout ? "is-soldout" : ""}" style="--card-accent:${v.color}" data-venue="${p.venue}">
-      <div class="card__media">
-        <span class="card__venue">${v.name}</span>
-        <img src="${CATEGORIES[p.cat].photo}" alt="${p.name} — plain ${CATEGORIES[p.cat].label.toLowerCase()} mock" />
+      <div class="card__media ${mediaMod}">
+        <img src="${photo}" alt="${p.name}" />
         ${stamp}
       </div>
       <div class="card__body">
         <h3 class="card__title">${p.name}</h3>
-        <p class="card__meta">100% Cotton · Unisex · S–3XL</p>
+        <p class="card__meta">${meta}</p>
         <div class="card__foot">
           <span class="card__price">$${p.price}</span>
           <button class="btn-add" data-id="${p.id}">
@@ -168,7 +181,7 @@ function lineHTML(line) {
   return `
     <li class="line" data-id="${p.id}">
       <div class="line__thumb" style="--card-accent:${v.color}">
-        <img src="${CATEGORIES[p.cat].photo}" alt="" />
+        <img src="${p.photo || CATEGORIES[p.cat].photo}" alt="" />
       </div>
       <div class="line__info">
         <p class="line__name">${p.name}</p>

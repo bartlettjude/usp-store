@@ -209,6 +209,14 @@ button { font: inherit; cursor: inherit; }
 }
 .card__media img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
 .card:hover .card__media img { transform: scale(1.04); }
+/* posters: show the full portrait artwork, gallery-style, no crop */
+.card__media--poster { background: #14110d; }
+.card__media--poster img { object-fit: contain; padding: 0.5rem; }
+.card:hover .card__media--poster img { transform: scale(1.02); }
+/* stickers: full die-cut art on a light studio backdrop */
+.card__media--sticker { background: #efefec; }
+.card__media--sticker img { object-fit: contain; padding: 1.25rem; }
+.card:hover .card__media--sticker img { transform: scale(1.03); }
 
 /* status stamps (sold out / last call) */
 .card__stamp {
