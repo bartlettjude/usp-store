@@ -1,0 +1,75 @@
+{
+  "source": "https://www.unionstagepresents.com/",
+  "platform": "Webflow + Untitled UI component library; Opendate ticketing",
+  "colors": {
+    "base": {
+      "dark": "#000000",
+      "light": "#ffffff",
+      "primaryAccent": "#e7decd",
+      "primaryAccent50": "#e9c73e80",
+      "primaryAccent25": "#e9c73e40",
+      "secondaryAccent": "#d7d7d7",
+      "backgroundGray": "#d7d7d7",
+      "lightGray": "#cccccc",
+      "white10": "#ffffff1a",
+      "white20": "#ffffff33"
+    },
+    "venues": {
+      "unionStage":       { "key": "us", "hex": "#e7d355", "name": "gold" },
+      "theHoward":        { "key": "th", "hex": "#437cbf", "name": "blue" },
+      "pearlStreet":      { "key": "ps", "hex": "#ea798b", "name": "pink" },
+      "jamminJava":       { "key": "jj", "hex": "#ff3c3b", "name": "red" },
+      "miracleTheatre":   { "key": "mt", "hex": "#b25b24", "name": "rust" },
+      "capitalTurnaround":{ "key": "ct", "hex": "#00b36c", "name": "green" },
+      "nationalsPark":    { "key": "np", "hex": "#d7d7d7", "name": "gray" }
+    }
+  },
+  "fonts": {
+    "header":    "\"lft-etica-mono\", sans-serif",
+    "body":      "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+    "specialty": "\"Special Elite\", sans-serif",
+    "typekitKit": "https://use.typekit.net/gqh8elb.css",
+    "notes": "Headers are monospaced and predominantly UPPERCASE. Special Elite is a typewriter/stamped accent face."
+  },
+  "typeScale": {
+    "headingLarge":  { "size": "3rem",     "lineHeight": 1.2, "weight": null, "notes": "white, -webkit-text-stroke:1px (knockout/outline)" },
+    "headingMedium": { "size": "2rem",     "lineHeight": 1.3, "weight": 600,  "transform": "none" },
+    "headingSmall":  { "size": "1.75rem",  "lineHeight": 1.0, "weight": 600 },
+    "headingXSmall": { "size": "1.5rem",   "lineHeight": 1.4, "weight": 600 },
+    "headingXXSmall":{ "size": "1.25rem",  "lineHeight": 1.5, "weight": 600 },
+    "textLarge":     { "size": "1.125rem", "lineHeight": 1.5 },
+    "body":          { "size": "1rem" },
+    "textSmall":     { "size": "0.875rem", "lineHeight": 1.5 }
+  },
+  "button": {
+    "primary": {
+      "border": "2px solid #e7decd",
+      "borderRadius": "0px",
+      "background": "#000000",
+      "color": "#ffffff",
+      "textTransform": "uppercase",
+      "padding": "1rem 2rem",
+      "fontSize": "1rem",
+      "fontWeight": 600,
+      "lineHeight": 1,
+      "transition": "all .3s",
+      "boxShadow": "0 1px 2px #1018280d",
+      "hover": { "color": "#e7decd", "background": "#000000" }
+    },
+    "variants": ["dark", "clear-button (radius 6px)", "secondary-gray", "tertiary-gray (ghost)"]
+  },
+  "radius": "0px",
+  "containers": { "large": "80rem", "small": "48rem", "narrow": "35rem" },
+  "breakpoints": ["1440px", "991px", "767px", "479px"],
+  "sectionBands": ["#000000", "#ffffff", "#e7decd", "#d7d7d7"],
+  "cards": {
+    "showCardLink": { "boxShadow": "0 2px 5px #00001459", "borderRadius": "0px", "background": "venue accent color", "layout": "flex column, full height" }
+  },
+  "assets": {
+    "cdnBase": "https://cdn.prod.website-files.com/6902734080a4b345f41078da/",
+    "logoWhite": "USP_logo_white.webp",
+    "pizzaCursor": "Pizza_Cursor_USP_64.webp",
+    "soldOutBadge": "sold-out.svg",
+    "lastCallBadge": "last-call.svg"
+  }
+}

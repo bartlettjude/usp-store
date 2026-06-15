@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Plain white hoodie product photo">
+  <defs>
+    <linearGradient id="bgh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f4f2"/><stop offset="1" stop-color="#e4e4e0"/>
+    </linearGradient>
+    <linearGradient id="fabh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="0.55" stop-color="#fafafa"/><stop offset="1" stop-color="#ececec"/>
+    </linearGradient>
+    <radialGradient id="shh" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#000" stop-opacity="0.18"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bgh)"/>
+  <ellipse cx="300" cy="505" rx="195" ry="34" fill="url(#shh)"/>
+  <!-- body + sleeves -->
+  <path fill="url(#fabh)" stroke="#d8d8d4" stroke-width="2" stroke-linejoin="round"
+    d="M214 132 C228 110, 372 110, 386 132
+       L444 156 L486 230 L440 268 L420 234 L420 486 C420 502, 410 510, 392 510
+       L208 510 C190 510, 180 502, 180 486 L180 234 L160 268 L114 230 L156 156 Z"/>
+  <!-- kangaroo pocket -->
+  <path fill="none" stroke="#dcdcd8" stroke-width="2.5" stroke-linejoin="round"
+    d="M236 392 L364 392 L378 458 L222 458 Z"/>
+  <path fill="none" stroke="#e6e6e2" stroke-width="2"
+    d="M236 392 C236 420, 252 432, 270 432 L330 432 C348 432, 364 420, 364 392"/>
+  <!-- hood -->
+  <path fill="#fbfbfb" stroke="#d3d3cf" stroke-width="2.5" stroke-linejoin="round"
+    d="M214 132 C236 96, 280 84, 300 84 C320 84, 364 96, 386 132
+       C360 150, 340 162, 300 162 C260 162, 240 150, 214 132 Z"/>
+  <path fill="none" stroke="#e2e2de" stroke-width="2"
+    d="M250 140 C270 156, 330 156, 350 140"/>
+  <!-- drawstrings -->
+  <line x1="282" y1="150" x2="278" y2="210" stroke="#cfcfca" stroke-width="4" stroke-linecap="round"/>
+  <line x1="318" y1="150" x2="322" y2="210" stroke="#cfcfca" stroke-width="4" stroke-linecap="round"/>
+  <!-- ribbed cuffs/hem -->
+  <path fill="none" stroke="#e0e0dc" stroke-width="2" d="M180 492 L420 492"/>
+  <!-- folds -->
+  <path fill="none" stroke="#efefed" stroke-width="2.5" stroke-linecap="round" opacity="0.8" d="M252 270 C258 320, 258 360, 250 388"/>
+  <path fill="none" stroke="#efefed" stroke-width="2.5" stroke-linecap="round" opacity="0.8" d="M348 270 C342 320, 342 360, 350 388"/>
+</svg>

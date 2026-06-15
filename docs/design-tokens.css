@@ -1,0 +1,68 @@
+/* ============================================================
+   Union Stage Presents — Design Tokens
+   Extracted from production CSS. Drop into :root to recreate the theme.
+   Source: https://www.unionstagepresents.com/  (Webflow + Untitled UI)
+   ============================================================ */
+
+:root {
+  /* ---- Base ---- */
+  --colors--base-dark: #000000;
+  --colors--base-light: #ffffff;
+  --colors--primary-accent: #e7decd;      /* cream — primary brand accent */
+  --colors--primary-accent-50: #e9c73e80; /* gold tint 50% */
+  --colors--primary-accent-25: #e9c73e40; /* gold tint 25% */
+  --colors--secondary-accent: #d7d7d7;
+  --colors--background-gray: #d7d7d7;
+  --colors--light-gray: #cccccc;
+  --colors--secondary-25: #dcd4bb40;
+  --colors--white-10: #ffffff1a;
+  --colors--white-20: #ffffff33;
+  --colors--transparent: #ffffff00;
+
+  /* ---- Per-venue accent colors ---- */
+  --venues--us: #e7d355; /* Union Stage      — gold   */
+  --venues--th: #437cbf; /* The Howard       — blue   */
+  --venues--ps: #ea798b; /* Pearl Street     — pink   */
+  --venues--jj: #ff3c3b; /* Jammin' Java     — red    */
+  --venues--mt: #b25b24; /* Miracle Theatre  — rust   */
+  --venues--ct: #00b36c; /* Capital Turnaround — green */
+  --venues--np: #d7d7d7; /* Nationals Park   — gray   */
+
+  /* ---- Font colors ---- */
+  --font-colors--dark-font-color: var(--colors--base-dark);
+  --font-colors--light-font-color: var(--colors--base-light);
+  --font-colors--text-link-hover: var(--colors--background-gray);
+
+  /* ---- Fonts ---- */
+  --fonts--header-font: "lft-etica-mono", sans-serif;   /* mono display, UPPERCASE */
+  --fonts--body-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                      Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans",
+                      "Droid Sans", "Helvetica Neue", sans-serif;
+  --fonts--specialty-serif: "Special Elite", sans-serif; /* typewriter accent */
+
+  /* ---- Buttons ---- */
+  --buttons--primary-btn-color: var(--colors--primary-accent);
+  --buttons--primary-btn-font-color: var(--colors--base-dark);
+  --buttons--primary-btn-hover-color: var(--colors--base-dark);
+  --buttons--primary-btn-hover-font-color: var(--colors--base-light);
+  --buttons--secondary-btn-color: var(--colors--transparent);
+  --buttons--secondary-btn-border-color: var(--colors--primary-accent);
+  --buttons--secondary-btn-font-color: var(--colors--primary-accent);
+  --buttons--secondary-btn-hover-color: var(--colors--base-light);
+  --buttons--secondary-btn-hover-font-color: var(--colors--base-dark);
+
+  /* ---- Sizing ---- */
+  --size--border-radius: 0px;            /* square corners everywhere */
+  --container--large: 80rem;             /* 1280px main container */
+  --container--small: 48rem;             /* 768px text column */
+}
+
+/* Type scale (utility-class equivalents) */
+/* heading-large : 3rem / 1.2  white, -webkit-text-stroke:1px (knockout) */
+/* heading-medium: 2rem / 1.3  weight 600                                */
+/* heading-small : 1.75rem / 1                                           */
+/* heading-xsmall: 1.5rem / 1.4                                          */
+/* heading-xxsmall:1.25rem / 1.5                                         */
+/* text-large    : 1.125rem / 1.5  | body 1rem | text-small 0.875rem     */
+
+/* Breakpoints: 1440 / 991 / 767 / 479 px (Webflow defaults) */

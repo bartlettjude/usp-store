@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gift Shop | Union Stage Presents</title>
+  <meta name="description" content="The Union Stage Presents gift shop — tees, hoodies, hats & accessories for DC's live music family." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="../" aria-label="Union Stage Presents home">
+        <img src="assets/logo.webp" alt="Union Stage Presents" />
+      </a>
+      <nav class="nav__links">
+        <a href="#">Shows</a>
+        <a href="#" aria-current="page">Gift Shop</a>
+        <a href="#">Venues</a>
+        <a href="#">About</a>
+      </nav>
+      <span class="nav__spacer"></span>
+      <button class="nav__cart" id="cartBtn">
+        Cart [<span class="nav__cart-count" id="cartCount">0</span>]
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <p class="hero__kicker">Official Gift Shop · DC's Live Music Family</p>
+    <h1 class="hero__title">GIFT<br><span class="solid">SHOP</span></h1>
+    <p class="hero__sub">
+      Take a little of the rooms you love home. Tees, hoodies, hats &amp; more from the
+      Union Stage Presents family — creative expression by anyone, for everyone.
+    </p>
+    <div class="hero__rule"></div>
+  </section>
+
+  <!-- ============ FILTERS ============ -->
+  <div class="filters">
+    <div class="filters__inner" id="filterBar">
+      <span class="filters__label">Shop</span>
+      <button class="chip chip--all" data-cat="all" aria-pressed="true">All</button>
+      <button class="chip" data-cat="tee">T-Shirts</button>
+      <button class="chip" data-cat="hoodie">Hoodies</button>
+      <button class="chip" data-cat="hat">Hats</button>
+      <button class="chip" data-cat="acc">Accessories</button>
+      <span class="filters__spacer"></span>
+      <span class="filters__count" id="resultCount"></span>
+    </div>
+  </div>
+
+  <!-- ============ PRODUCT GRID ============ -->
+  <main class="shop">
+    <div class="grid" id="grid"><!-- products injected by app.js --></div>
+  </main>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="news">
+    <h2>Never Miss A Drop</h2>
+    <p>New tees land with every tour. Get on the list for early access and show announcements.</p>
+    <form class="news__form" onsubmit="return false;">
+      <input type="email" placeholder="your@email.com" aria-label="Email address" />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <img src="assets/logo.webp" alt="Union Stage Presents" />
+        <p class="footer__tag">"Creative Expression By Anyone, For Everyone."</p>
+      </div>
+      <div class="footer__col">
+        <h4>Our Venues</h4>
+        <ul class="footer__venues">
+          <li><a href="#"><span class="chip__dot" style="background:var(--us)"></span>Union Stage</a></li>
+          <li><a href="#"><span class="chip__dot" style="background:var(--th)"></span>The Howard Theatre</a></li>
+          <li><a href="#"><span class="chip__dot" style="background:var(--ps)"></span>Pearl Street Warehouse</a></li>
+          <li><a href="#"><span class="chip__dot" style="background:var(--jj)"></span>Jammin' Java</a></li>
+          <li><a href="#"><span class="chip__dot" style="background:var(--mt)"></span>Miracle Theatre</a></li>
+          <li><a href="#"><span class="chip__dot" style="background:var(--ct)"></span>Capital Turnaround</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Shop</h4>
+        <ul class="footer__links">
+          <li><a href="#">All Gifts</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Union Stage Presents</span>
+      <span>Privacy · Accessibility · Terms</span>
+    </div>
+  </footer>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart" id="cartDrawer" aria-hidden="true" aria-label="Shopping cart">
+    <div class="cart__head">
+      <h2 class="cart__title">Your Cart</h2>
+      <button class="cart__close" id="cartClose" aria-label="Close cart">×</button>
+    </div>
+    <ul class="cart__items" id="cartItems"><!-- lines injected by app.js --></ul>
+    <div class="cart__foot">
+      <div class="cart__subtotal">
+        <span>Subtotal</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+      <p class="cart__note">Shipping &amp; taxes calculated at checkout.</p>
+      <button class="cart__checkout" id="checkoutBtn" disabled>Checkout</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast">Added to cart</div>
+
+  <script src="app.js"></script>
+</body>
+</html>

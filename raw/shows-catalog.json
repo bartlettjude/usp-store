@@ -1,0 +1,3551 @@
+{
+  "count": 393,
+  "byVenue": {
+    "Pearl Street Warehouse": 100,
+    "Union Stage": 99,
+    "Jammin' Java": 79,
+    "The Howard Theatre": 78,
+    "The Miracle Theatre": 22,
+    "Capital Turnaround": 8,
+    "Plaza Stage at Nationals Park": 7
+  },
+  "shows": [
+    {
+      "slug": "/shows/1970-s-disco-inferno-ft-dj-d-24-jul",
+      "title": "1970's Disco Inferno ft DJ D",
+      "date": "Jul 24, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "654552",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/2slimey-no-bass-no-fun-19-jul",
+      "title": "2slimey - NO BASS NO FUN",
+      "date": "Jul 19, 2026",
+      "venue": "Union Stage",
+      "opendateId": "692216",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/3quency-girls-talk-tour-09-sep",
+      "title": "3QUENCY \u2013 GIRLS TALK TOUR",
+      "date": "Sep 09, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "710355",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/a-thousand-horses-29-aug",
+      "title": "A Thousand Horses",
+      "date": "Aug 29, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "712985",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/adobo-day-party-dj-set-by-pedro-night-hosted-by-waltero-27-jun",
+      "title": "ADOBO Day Party DJ Set by: Pedro Night - Hosted by: Waltero",
+      "date": "Jun 27, 2026",
+      "venue": "Plaza Stage at Nationals Park",
+      "opendateId": "711988",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/ainae-13-aug",
+      "title": "Ainae",
+      "date": "Aug 13, 2026",
+      "venue": "Union Stage",
+      "opendateId": "710129",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/aj-lee-blue-summit-13-nov",
+      "title": "AJ Lee & Blue Summit",
+      "date": "Nov 13, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "679305",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/akeem-ali-the-texture-tour-08-nov",
+      "title": "AKEEM ALI  THE TEXTURE TOUR",
+      "date": "Nov 08, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "668677",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/aldous-harding-11-sep",
+      "title": "Aldous Harding",
+      "date": "Sep 11, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "649927",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/alicia-witt-album-release-show-between-heaven-and-earth-and-david-lynch-15-sep",
+      "title": "Alicia Witt - Album Release Show Between Heaven and Earth (and David Lynch)",
+      "date": "Sep 15, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "716190",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/allan-rayman-hotel-allan-the-10-year-anniversary-tour-05-nov",
+      "title": "Allan Rayman - HOTEL ALLAN - The 10 Year Anniversary Tour",
+      "date": "Nov 05, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "691896",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/ally-the-piper-23-jun",
+      "title": "Ally the Piper",
+      "date": "Jun 23, 2026",
+      "venue": "Union Stage",
+      "opendateId": "670106",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/american-aquarium-16-aug",
+      "title": "American Aquarium",
+      "date": "Aug 16, 2026",
+      "venue": "Union Stage",
+      "opendateId": "688357",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/american-vanity-19-jul",
+      "title": "American Vanity",
+      "date": "Jul 19, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "678961",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/an-evening-with-don-ross-julie-malia-06-nov",
+      "title": "(POSTPONED!!!) An Evening with Don Ross & Julie Malia",
+      "date": "Nov 06, 2027",
+      "venue": "Jammin' Java",
+      "opendateId": "605541",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/an-evening-with-ira-glass-11-jul",
+      "title": "Stories for a Saturday Night: An Evening with Ira Glass",
+      "date": "Jul 11, 2026",
+      "venue": "Capital Turnaround",
+      "opendateId": "635587",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/an-evening-with-mike-dawes-02-feb",
+      "title": "An Evening with Mike Dawes",
+      "date": "Oct 30, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "631558",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/an-evening-with-oz-noy-trio-featuring-dave-weckl-brian-charette-26-oct",
+      "title": "An Evening with Oz Noy Trio featuring Dave Weckl & Brian Charette",
+      "date": "Oct 26, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "656391",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/an-evening-with-the-nighthawks-04-sep",
+      "title": "An Evening with The Nighthawks",
+      "date": "Sep 04, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "713343",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/an-intimate-evening-with-copeland-19-sep",
+      "title": "An Intimate Evening with Copeland",
+      "date": "Sep 19, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "679533",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/anna-graves-15-sep",
+      "title": "Anna Graves",
+      "date": "Sep 15, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "668711",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/anna-moss-08-aug",
+      "title": "Anna Moss & Sabine McCalla",
+      "date": "Aug 08, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "690534",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/argo-the-violet-queens-maysuns-mystery-friends-26-jun",
+      "title": "Argo & The Violet Queens & MAYSUNS & Mystery Friends",
+      "date": "Jun 26, 2026",
+      "venue": "Union Stage",
+      "opendateId": "647280",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/argo-the-violet-queens-virg-20-jul",
+      "title": "Argo & The Violet Queens + ViRG",
+      "date": "Jul 20, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "712746",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/arlo-parks-desire-tour-29-aug",
+      "title": "ARLO PARKS - DESIRE TOUR",
+      "date": "Aug 29, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "672829",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/armand-hammer-27-sep",
+      "title": "Armand Hammer",
+      "date": "Sep 27, 2026",
+      "venue": "Union Stage",
+      "opendateId": "624319",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/army-day-out-a-k-pop-fan-celebration-09-aug",
+      "title": "Army Day Out: A K-Pop Fan Celebration",
+      "date": "Aug 09, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "671398",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/arranged-in-april-29-jul",
+      "title": "Arranged in April",
+      "date": "Jul 29, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "709437",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/arts-fishing-club-20-jun",
+      "title": "Arts Fishing Club",
+      "date": "Jun 20, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "627101",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/ashley-darby-presents-black-broadway-is-back-ft-pop-up-performances-the-cast-of-the-real-housewives-of-potomac-and-d-c-history-01-jul",
+      "title": "Ashley Darby presents: Black Broadway is Back! ft. pop-up performances, the cast of the Real Housewives of Potomac, and D.C. history",
+      "date": "Jul 01, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "712196",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/augustana-all-the-stars-and-boulevards-20th-anniversary-an-intimate-solo-performance-of-the-album-in-full-18-jul",
+      "title": "Augustana - All the Stars and Boulevards (20th Anniversary) \u2014 An Intimate Solo Performance of the Album in Full",
+      "date": "Jul 18, 2026",
+      "venue": "Union Stage",
+      "opendateId": "692007",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/ax-and-the-hatchetmen-the-late-checkout-tour-2026-14-nov",
+      "title": "Ax and the Hatchetmen: The Late Checkout Tour 2026",
+      "date": "Nov 14, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "653952",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/b-side-presents-anees-lucky-duck-tour-washington-d-c-24-sep",
+      "title": "B Side Presents: Anees - Lucky Duck Tour - Washington D.C.",
+      "date": "Sep 24, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "700985",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/baby-bugs-29-oct",
+      "title": "Baby Bugs",
+      "date": "Oct 29, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "682779",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/babychiefdoit-presents-the-rambo-tour-22-jul",
+      "title": "BabyChiefDoIt Presents: The Rambo Tour",
+      "date": "Jul 22, 2026",
+      "venue": "Union Stage",
+      "opendateId": "695267",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/bachelor-boys-band-13-jul",
+      "title": "Bachelor Boys Band",
+      "date": "Jul 13, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "671385",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/band-battle-31-finals-22-aug",
+      "title": "Band Battle #31 Finals",
+      "date": "Aug 22, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "674399",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/band-battle-31-prelim-1-05-jul",
+      "title": "Band Battle #31 - Prelim 1",
+      "date": "Jul 05, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "674389",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/band-battle-31-prelim-2-09-jul",
+      "title": "Band Battle #31 - Prelim 2",
+      "date": "Jul 09, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "679283",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/band-battle-31-prelim-3-10-jul",
+      "title": "Band Battle #31 - Prelim 3",
+      "date": "Jul 10, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "674394",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/band-battle-31-prelim-4-12-jul",
+      "title": "Band Battle #31 - Prelim 4",
+      "date": "Jul 12, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "674396",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/barstow-drive-27-jul",
+      "title": "Barstow Drive",
+      "date": "Jul 27, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "703628",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/basia-bulat-07-nov",
+      "title": "Basia Bulat",
+      "date": "Nov 07, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "674411",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/bayonne-the-filters-tour-10-oct",
+      "title": "Bayonne - The \u2018Filters\u2019 Tour",
+      "date": "Oct 10, 2026",
+      "venue": "Union Stage",
+      "opendateId": "686064",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/bayou-27-jun",
+      "title": "Bayou",
+      "date": "Jun 27, 2026",
+      "venue": "Union Stage",
+      "opendateId": "657945",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/bbmak-01-jul",
+      "title": "An Evening with BBMak",
+      "date": "Jul 01, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "655529",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/belmont-performing-10-years-of-between-you-and-me-30-jul",
+      "title": "Belmont performing 10 Years of Between You and Me",
+      "date": "Jul 30, 2026",
+      "venue": "Union Stage",
+      "opendateId": "685840",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/ben-lapidus-20-jun",
+      "title": "Ben Lapidus",
+      "date": "Jun 20, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "700201",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/ben-tufts-and-friends-present-spirit-of-76-12-sep",
+      "title": "Ben Tufts and Friends present: Spirit of '76",
+      "date": "Sep 12, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "682920",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/benjamin-tod-and-the-inline-six-2026-tour-16-oct",
+      "title": "Benjamin Tod and the Inline Six 2026 Tour",
+      "date": "Oct 16, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "622281",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/benny-g-18-sep",
+      "title": "Benny G",
+      "date": "Sep 18, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "686624",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/best-friends-podcast-sasheer-zamata-nicole-byer-07-nov",
+      "title": "Best Friends Podcast - Sasheer Zamata & Nicole Byer",
+      "date": "Nov 07, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "688098",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/beth-orton-15-sep",
+      "title": "Beth Orton",
+      "date": "Sep 15, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "688300",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/bethel-music-2026-tour-15-oct",
+      "title": "Bethel Music 2026 Tour",
+      "date": "Oct 15, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "651789",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/big-special-07-oct",
+      "title": "BIG SPECIAL",
+      "date": "Oct 07, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "690538",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/binchtopia-the-shake-up-your-life-tour-17-aug",
+      "title": "Binchtopia: The Shake Up Your Life Tour",
+      "date": "Aug 17, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "710139",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/bingo-loco-15-aug",
+      "title": "Bingo Loco",
+      "date": "Aug 15, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "673251",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/birdcage-30-jul",
+      "title": "Birdcage",
+      "date": "Jul 30, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "710817",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/bit-brigade-performs-mega-man-x-live-28-jun",
+      "title": "Bit Brigade Performs \"Mega Man X\" LIVE",
+      "date": "Jun 28, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "679193",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/blacktop-mojo-27-aug",
+      "title": "Blacktop Mojo",
+      "date": "Aug 27, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "686378",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/bleach-30-year-anniversary-w-special-guests-16-jul",
+      "title": "Bleach - 30 Year Anniversary w/ special guests",
+      "date": "Jul 16, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "703618",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/bleach-30-year-anniversary-w-special-guests-22-may",
+      "title": "Bleach - 30 Year Anniversary w/ special guests",
+      "date": "Jul 16, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "703618",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/blu-eyes-two-people-at-once-tour-22-sep",
+      "title": "BL\u00dc EYES: Two People at Once Tour",
+      "date": "Sep 22, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "658765",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/blue-water-highway-19-aug",
+      "title": "Blue Water Highway",
+      "date": "Aug 19, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "701224",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/boombox-15-oct",
+      "title": "BoomBox",
+      "date": "Oct 15, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "695646",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/boston-manor-11-nov",
+      "title": "Boston Manor",
+      "date": "Nov 11, 2026",
+      "venue": "Union Stage",
+      "opendateId": "647733",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/boy-harsher-30-oct",
+      "title": "Boy Harsher",
+      "date": "Oct 30, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "642826",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/brian-k-the-parkway-album-release-18-sep",
+      "title": "Brian K & The Parkway Album Release",
+      "date": "Sep 18, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "654002",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/broadway-rave-29-aug",
+      "title": "Broadway Rave",
+      "date": "Aug 29, 2026",
+      "venue": "Union Stage",
+      "opendateId": "701191",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/bug-hunter-and-the-narcissist-cookbook-02-jul",
+      "title": "Bug Hunter and The Narcissist Cookbook",
+      "date": "Jul 02, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "668799",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/butttootking-lydia-b-kollins-suzie-toot-and-kori-king-01-oct",
+      "title": "ButtTootKing: Lydia B Kollins, Suzie Toot, and Kori King",
+      "date": "Oct 01, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "658660",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/cabaret-voltaire-final-usa-canada-tour-23-sep",
+      "title": "Cabaret Voltaire: Final USA + Canada Tour",
+      "date": "Sep 23, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "657328",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/caitlynne-curtis-18-jun",
+      "title": "Caitlynne Curtis",
+      "date": "Jun 18, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "680609",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/caleb-caudle-the-sweet-critters-20-jun",
+      "title": "An Evening with Caleb Caudle & The Sweet Critters",
+      "date": "Jun 20, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "674554",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/caroline-20-nov",
+      "title": "caroline",
+      "date": "Nov 20, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "687096",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/carsie-blanton-06-nov",
+      "title": "Carsie Blanton",
+      "date": "Nov 06, 2026",
+      "venue": "Union Stage",
+      "opendateId": "645198",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/celtic-underground-you-can-always-go-home-debut-album-release-show-26-jun",
+      "title": "CELTIC UNDERGROUND - DEBUT ALBUM RELEASE SHOW",
+      "date": "Jun 26, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "687404",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/charlotte-sands-satellite-tour-11-sep",
+      "title": "Charlotte Sands - Satellite Tour",
+      "date": "Sep 11, 2026",
+      "venue": "Union Stage",
+      "opendateId": "685829",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/chasing-abbey-16-oct",
+      "title": "Chasing Abbey",
+      "date": "Oct 16, 2026",
+      "venue": "Union Stage",
+      "opendateId": "669087",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/chatham-county-line-27-aug",
+      "title": "Chatham County Line",
+      "date": "Aug 27, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "688986",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/chris-mitchell-begging-for-sax-tour-17-jul",
+      "title": "Chris Mitchell - Begging For Sax Tour",
+      "date": "Jul 17, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "636145",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/chrissy-chlapecka-23-jun",
+      "title": "Chrissy Chlapecka",
+      "date": "Jun 23, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "691394",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/chxrry-the-u-me-my-ego-tour-28-aug",
+      "title": "CHXRRY Presents: The Ego Tour",
+      "date": "Aug 28, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "696665",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/clay-and-reecie-live-beyond-the-mic-01-aug",
+      "title": "Clay and Reecie: Beyond the Mic",
+      "date": "Aug 01, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "712940",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/conway-the-machine-24-jun",
+      "title": "Conway the Machine",
+      "date": "Jun 24, 2026",
+      "venue": "Union Stage",
+      "opendateId": "685030",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/cordovas-02-aug",
+      "title": "Cordovas",
+      "date": "Aug 02, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "695564",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/crazy-chester-a-very-carrboro-tribute-to-the-band-the-last-waltz-50th-anniversary-tour-w-jp-hudson-27-nov",
+      "title": "Crazy Chester - A Very Carrboro Tribute To The Band & The Last Waltz 50th Anniversary Tour w/ JP Hudson",
+      "date": "Nov 27, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "668924",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/daily-stoic-live-09-dec",
+      "title": "Daily Stoic Live",
+      "date": "Dec 09, 2026",
+      "venue": "Capital Turnaround",
+      "opendateId": "687257",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/dang-a-soulful-electronic-dance-night-25-jul",
+      "title": "SATISFACTION (2010-2017 EDM bangers All Night Long!)",
+      "date": "Jul 25, 2026",
+      "venue": "Union Stage",
+      "opendateId": "619022",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/david-cook-26-jul",
+      "title": "David Cook",
+      "date": "Jul 26, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "700002",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/david-ramirez-30-jul",
+      "title": "David Ramirez",
+      "date": "Jul 30, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "672486",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/davide-de-pierro-04-oct",
+      "title": "Davide De Pierro",
+      "date": "Oct 04, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "669775",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/dayshift-party-25-jul",
+      "title": "Dayshift Party",
+      "date": "Jul 25, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "673247",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/dc-dating-live-is-back-with-a-vengeance-hot-summer-of-love-18-jul",
+      "title": "DC DATING LIVE! IS BACK \u2014 WITH A VENGEANCE: HOT SUMMER OF LOVE",
+      "date": "Jul 18, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "656920",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/dc-moth-storyslam-revenge-13-jul",
+      "title": "DC Moth StorySLAM: REVENGE",
+      "date": "Jul 13, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "640552",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/dc-rockers-summer-showcase-27-jun",
+      "title": "DC ROCKERS' SUMMER SHOWCASE",
+      "date": "Jun 27, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "679037",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/dead-calm-15-jun",
+      "title": "Dead Calm",
+      "date": "Jun 15, 2026",
+      "venue": "Union Stage",
+      "opendateId": "654313",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/death-from-above-1979-05-dec",
+      "title": "Death From Above 1979",
+      "date": "Dec 05, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "648064",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/denny-love-show-love-tour-06-mar",
+      "title": "ICON CONCERTS & UNION STAGE PRESENTS: DENNY LOVE: SHOW LOVE TOUR",
+      "date": "Mar 06, 2027",
+      "venue": "Capital Turnaround",
+      "opendateId": "713112",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/dent-may-25-oct",
+      "title": "Dent May",
+      "date": "Oct 25, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "670289",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/dess-dior-07-jun",
+      "title": "Dess Dior",
+      "date": "Aug 28, 2026",
+      "venue": "Union Stage",
+      "opendateId": "690246",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/destiny-s-child-iconic-reimagined-tribute-washington-dc-16-aug-d4a0a",
+      "title": "Destiny's Child: Iconic Reimagined Tribute \u2013 Washington DC",
+      "date": "Aug 16, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "695091",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/destiny-s-child-iconic-reimagined-tribute-washington-dc-16-aug",
+      "title": "Destiny's Child: Iconic Reimagined Tribute \u2013 Washington DC",
+      "date": "Aug 16, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "695092",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/devon-gilfillian-15-sep",
+      "title": "Devon Gilfillian Time Will Tell Tour",
+      "date": "Sep 15, 2026",
+      "venue": "Union Stage",
+      "opendateId": "653556",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/dice-14-oct",
+      "title": "Dice",
+      "date": "Oct 14, 2026",
+      "venue": "Union Stage",
+      "opendateId": "681803",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/dwllrs-one-of-those-nights-tour-01-aug",
+      "title": "DWLLRS - One of Those Nights Tour",
+      "date": "Aug 01, 2026",
+      "venue": "Union Stage",
+      "opendateId": "687783",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/dyego-blunites-25-jun",
+      "title": "Dyego & BluNites",
+      "date": "Jun 25, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "669203",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/eivor-29-oct",
+      "title": "Eiv\u00f8r",
+      "date": "Oct 29, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "669451",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/el-ten-eleven-19-sep",
+      "title": "El Ten Eleven",
+      "date": "Sep 19, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "680945",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/elijah-scott-in-a-bar-somewhere-tour-08-jul",
+      "title": "Elijah Scott: In A Bar Somewhere Tour",
+      "date": "Jul 08, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "659427",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/elizabeth-nichols-i-don-t-kiss-tell-i-kiss-tour-23-oct",
+      "title": "Elizabeth Nichols - I Don't Kiss & Tell, I Kiss & Tour",
+      "date": "Oct 23, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "692010",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/epik-high-3-0-north-american-tour-10-oct",
+      "title": "EPIK HIGH 3.0 NORTH AMERICAN TOUR",
+      "date": "Oct 10, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "686426",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/ethan-lipton-his-orchestra-25-jun",
+      "title": "An Evening with Ethan Lipton & His Orchestra",
+      "date": "Jun 25, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "690258",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/eva-ayllon-with-special-guest-daniela-darcourt-01-nov",
+      "title": "Eva Ayllon with special guest Daniela Darcourt",
+      "date": "Nov 01, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "688752",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/evangelia-13-sep",
+      "title": "Evangelia",
+      "date": "Sep 13, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "686620",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/everything-yes-19-jun",
+      "title": "Everything Yes",
+      "date": "Jun 19, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "684826",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/faouzia-the-film-noir-tour-14-aug",
+      "title": "Faouzia - The FILM NOIR Tour",
+      "date": "Aug 14, 2026",
+      "venue": "Union Stage",
+      "opendateId": "688205",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/fattmack-the-mckenzie-tour-2-0-23-aug",
+      "title": "FATTMACK - The McKenzie Tour 2.0",
+      "date": "Aug 23, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "713841",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/femme-fatale-19-jun",
+      "title": "Femme Fatale",
+      "date": "Jun 19, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "627588",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/fever-presents-ballet-of-lights-07-feb-d5624",
+      "title": "FEVER PRESENTS: BALLET OF LIGHTS",
+      "date": "Feb 07, 2027",
+      "venue": "The Howard Theatre",
+      "opendateId": "712995",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/fever-presents-ballet-of-lights-07-feb",
+      "title": "FEVER PRESENTS: BALLET OF LIGHTS",
+      "date": "Feb 07, 2027",
+      "venue": "The Howard Theatre",
+      "opendateId": "710193",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/fever-presents-ballet-of-lights-13-dec-395c0",
+      "title": "FEVER PRESENTS: BALLET OF LIGHTS",
+      "date": "Dec 13, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "710191",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/fever-presents-ballet-of-lights-13-dec",
+      "title": "FEVER PRESENTS: BALLET OF LIGHTS",
+      "date": "Dec 13, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "712992",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/flamingosis-04-jul",
+      "title": "Flamingosis - Bright Moments 10 Year Anniversary",
+      "date": "Jul 04, 2026",
+      "venue": "Union Stage",
+      "opendateId": "703562",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/flawed-mangoes-21-jun",
+      "title": "Flawed Mangoes",
+      "date": "Jun 21, 2026",
+      "venue": "Union Stage",
+      "opendateId": "674368",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/flowerbomb-homecoming-show-22-aug",
+      "title": "Flowerbomb - Homecoming Show",
+      "date": "Aug 22, 2026",
+      "venue": "Union Stage",
+      "opendateId": "713955",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/foy-vance-the-wake-world-tour-24-apr",
+      "title": "Foy Vance - The Wake World Tour",
+      "date": "Apr 24, 2027",
+      "venue": "The Howard Theatre",
+      "opendateId": "649007",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/frank-maza-featuring-javier-limon-present-back-then-02-nov",
+      "title": "Frank Maza Featuring Javier Limon Present: Back Then.",
+      "date": "Nov 02, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "714868",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/fred-eaglesmith-14-oct",
+      "title": "Fred Eaglesmith featuring Tif Ginn",
+      "date": "Oct 14, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "626910",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/freestyle-dansfit-a-unique-dance-fitness-experience-at-the-wharf-02-aug",
+      "title": "Freestyle DansFit: A Unique Dance Fitness Experience at the Wharf",
+      "date": "Aug 02, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "712410",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/freestyle-dansfit-a-unique-dance-fitness-experience-at-the-wharf-05-jul",
+      "title": "Freestyle DansFit: A Unique Dance Fitness Experience at the Wharf",
+      "date": "Jul 05, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "712381",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/freestyle-dansfit-a-unique-dance-fitness-experience-at-the-wharf-09-aug",
+      "title": "Freestyle DansFit: A Unique Dance Fitness Experience at the Wharf",
+      "date": "Aug 09, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "712417",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/freestyle-dansfit-a-unique-dance-fitness-experience-at-the-wharf-12-jul",
+      "title": "Freestyle DansFit: A Unique Dance Fitness Experience at the Wharf",
+      "date": "Jul 12, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "712385",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/freestyle-dansfit-a-unique-dance-fitness-experience-at-the-wharf-16-aug",
+      "title": "Freestyle DansFit: A Unique Dance Fitness Experience at the Wharf",
+      "date": "Aug 16, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "712421",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/freestyle-dansfit-a-unique-dance-fitness-experience-at-the-wharf-19-jul",
+      "title": "Freestyle DansFit: A Unique Dance Fitness Experience at the Wharf",
+      "date": "Jul 19, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "712399",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/freestyle-dansfit-a-unique-dance-fitness-experience-at-the-wharf-21-jun",
+      "title": "Freestyle DansFit: A Unique Dance Fitness Experience at the Wharf",
+      "date": "Jun 21, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "712357",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/freestyle-dansfit-a-unique-dance-fitness-experience-at-the-wharf-23-aug",
+      "title": "Freestyle DansFit: A Unique Dance Fitness Experience at the Wharf",
+      "date": "Aug 23, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "712423",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/freestyle-dansfit-a-unique-dance-fitness-experience-at-the-wharf-26-jul",
+      "title": "Freestyle DansFit: A Unique Dance Fitness Experience at the Wharf",
+      "date": "Jul 26, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "712407",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/freestyle-dansfit-a-unique-dance-fitness-experience-at-the-wharf-28-jun",
+      "title": "Freestyle DansFit: A Unique Dance Fitness Experience at the Wharf",
+      "date": "Jun 28, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "712360",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/freestyle-dansfit-a-unique-dance-fitness-experience-at-the-wharf-30-aug",
+      "title": "Freestyle DansFit: A Unique Dance Fitness Experience at the Wharf",
+      "date": "Aug 30, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "712424",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/french-79-close-to-the-giants-06-feb",
+      "title": "French 79 - CLOSE TO THE GIANTS",
+      "date": "Feb 06, 2027",
+      "venue": "The Howard Theatre",
+      "opendateId": "658308",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/friendlyjordies-presents-alien-hunter-31-jul",
+      "title": "Friendlyjordies Presents: Alien Hunter",
+      "date": "Jul 31, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "686695",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/fudge-18-jul",
+      "title": "Fudge",
+      "date": "Jul 18, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "680301",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/fulton-lee-sing-with-me-tour-2026-17-jun",
+      "title": "Fulton Lee \u2013 Sing With Me Tour 2026",
+      "date": "Jun 17, 2026",
+      "venue": "Union Stage",
+      "opendateId": "599534",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/future-nobodies-15-jun",
+      "title": "Future Nobodies",
+      "date": "Jun 15, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "635448",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/gannon-fremin-ccrev-hello-hate-to-see-you-tour-08-aug",
+      "title": "Gannon Fremin & CCREV // Hello, Hate to See You Tour",
+      "date": "Aug 08, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "683727",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/garrison-starr-13-oct",
+      "title": "Garrison Starr",
+      "date": "Oct 13, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "710483",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/gene-19-nov",
+      "title": "Gene",
+      "date": "Nov 19, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "669752",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/generacion-suicida-16-jul",
+      "title": "Generaci\u00f3n Suicida",
+      "date": "Jul 16, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "671110",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/gnash-the-garden-tour-24-sep",
+      "title": "gnash - The Garden Tour",
+      "date": "Sep 24, 2026",
+      "venue": "Union Stage",
+      "opendateId": "668727",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/great-northern-out-of-dc-a-tribute-to-the-greatful-dead-28-aug",
+      "title": "Great Northern Out of DC - A Tribute to The Greatful Dead",
+      "date": "Aug 28, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "683956",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/gus-heagerty-live-is-this-the-new-me-14-jul",
+      "title": "Gus Heagerty, Live! Is This the New Me?",
+      "date": "Jul 14, 2026",
+      "venue": "Union Stage",
+      "opendateId": "709309",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/hard-reset-vol-1-alice-gas-blackwinterwells-ft-hateoryx-down-special-fryenation-23-jul",
+      "title": "HARD RESET VOL. 1: Shinigami x blackwinterwells",
+      "date": "Jul 23, 2026",
+      "venue": "Union Stage",
+      "opendateId": "700746",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/hayden-pedigo-jens-kuross-01-dec",
+      "title": "Hayden Pedigo",
+      "date": "Sep 30, 2026",
+      "venue": "Union Stage",
+      "opendateId": "600979",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/heems-21-jun",
+      "title": "Heems",
+      "date": "Jun 21, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "687587",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/himra-28-jun",
+      "title": "Himra",
+      "date": "Jun 28, 2026",
+      "venue": "Union Stage",
+      "opendateId": "683259",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/history-that-doesn-t-suck-with-professor-greg-jackson-18-jun",
+      "title": "History That Doesn't Suck With Professor Greg Jackson",
+      "date": "Jun 18, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "685425",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/holy-wave-04-aug",
+      "title": "Holy Wave",
+      "date": "Aug 04, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "669853",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/homecoming-featuring-gordon-sterling-the-people-and-isaac-hadden-w-soundwaves-15-aug",
+      "title": "Homecoming featuring Gordon Sterling & The People and Isaac Hadden w Soundwaves",
+      "date": "Aug 15, 2026",
+      "venue": "Union Stage",
+      "opendateId": "673228",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/horace-pinker-celebration-summer-16-jun",
+      "title": "Horace Pinker & Celebration Summer",
+      "date": "Jun 16, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "655395",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/horse-feathers-17-sep",
+      "title": "Horse Feathers",
+      "date": "Sep 17, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "683121",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/hot-flash-heat-wave-25-sep",
+      "title": "Hot Flash Heat Wave",
+      "date": "Sep 25, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "688295",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/hot-like-mars-07-aug",
+      "title": "Hot Like Mars",
+      "date": "Aug 07, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "649391",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/house-of-heavy-24-jul",
+      "title": "House of Heavy",
+      "date": "Jul 24, 2026",
+      "venue": "Union Stage",
+      "opendateId": "692823",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/hudson-river-line-the-music-of-billy-joel-17-jul",
+      "title": "Hudson River Line: The Music of Billy Joel",
+      "date": "Jul 17, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "658323",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/hue-22-aug",
+      "title": "Hue",
+      "date": "Aug 22, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "688861",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/huzzah-better-said-than-done-s-15th-anniversary-storytelling-show-03-sep",
+      "title": "Huzzah! Better Said Than Done's 15th Anniversary Storytelling Show",
+      "date": "Sep 03, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "703391",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/ian-mcconnell-18-oct",
+      "title": "Ian McConnell",
+      "date": "Oct 18, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "692395",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/idkconundrum-22-jun",
+      "title": "idkconundrum",
+      "date": "Jun 22, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "712110",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/inara-george-of-the-bird-and-the-bee-17-jun",
+      "title": "Inara George (of The Bird and the Bee)",
+      "date": "Jun 17, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "679652",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/india-shawn-presents-subject-to-change-14-jul",
+      "title": "India Shawn Presents: Subject To Change",
+      "date": "Jul 14, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "713081",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/innlet-02-aug",
+      "title": "Innlet",
+      "date": "Aug 02, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "695107",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/is-this-going-to-cause-an-argument-24-jun",
+      "title": "Is This Going To Cause An Argument",
+      "date": "Jun 24, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "669705",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/jack-flowers-the-petal-tones-emily-fain-berra-and-shame-shame-05-jul",
+      "title": "Jack Flowers & The Petal Tones, Emily Fain, Berra, and Shame Shame",
+      "date": "Jul 05, 2026",
+      "venue": "Union Stage",
+      "opendateId": "716224",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/jacoozy-21-jul",
+      "title": "Jacoozy & The Band Memo",
+      "date": "Jul 21, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "685362",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/jane-o-neill-10-jul",
+      "title": "Jane O'Neill",
+      "date": "Jul 10, 2026",
+      "venue": "Union Stage",
+      "opendateId": "686971",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/jason-aldean-luke-bryan-double-down-tour-20-aug",
+      "title": "JASON ALDEAN & LUKE BRYAN: DOUBLE DOWN TOUR",
+      "date": "Aug 20, 2026",
+      "venue": "Plaza Stage at Nationals Park",
+      "opendateId": "701210",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/jason-schmidt-08-apr",
+      "title": "Jason Schmidt",
+      "date": "Aug 20, 2026",
+      "venue": "Union Stage",
+      "opendateId": "655294",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/jay-nash-27-sep",
+      "title": "Jay Nash",
+      "date": "Sep 27, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "651568",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/jay-yoder-16-aug",
+      "title": "Jay Yoder",
+      "date": "Aug 16, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "712766",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/jeff-bernat-luv-language-tour-04-oct",
+      "title": "Jeff Bernat - Luv Language Tour",
+      "date": "Oct 04, 2026",
+      "venue": "Union Stage",
+      "opendateId": "680325",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/jenna-davis-27-oct",
+      "title": "Jenna Davis",
+      "date": "Oct 27, 2026",
+      "venue": "Union Stage",
+      "opendateId": "687283",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/jervis-campbell-22-sep",
+      "title": "Jervis Campbell",
+      "date": "Sep 22, 2026",
+      "venue": "Union Stage",
+      "opendateId": "685845",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/jesse-james-deconto-the-pinkerton-raid-20-aug",
+      "title": "Jesse James DeConto (The Pinkerton Raid)",
+      "date": "Aug 20, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "686882",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/jhariah-22-jun",
+      "title": "Jhariah - The Trust Ceremony Tour",
+      "date": "Jun 22, 2026",
+      "venue": "Union Stage",
+      "opendateId": "684038",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/jim-e-brown-10-sep",
+      "title": "Jim E. Brown",
+      "date": "Sep 10, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "667812",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/jinx-proof-30th-anniversary-with-trapped-under-ice-youth-of-today-damnation-a-d-the-final-agony-04-sep",
+      "title": "Jinx Proof 30th Anniversary with Trapped Under Ice, Youth of Today, Damnation A.D., The Final Agony",
+      "date": "Sep 04, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "686425",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/jivebomb-12-jul",
+      "title": "Jivebomb",
+      "date": "Jul 12, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "688833",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/joanne-mcnally-pinotphile-28-oct",
+      "title": "Joanne McNally - Pinotphile",
+      "date": "Oct 28, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "679110",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/joe-fenti-20-sep",
+      "title": "Joe Fenti",
+      "date": "Sep 20, 2026",
+      "venue": "Union Stage",
+      "opendateId": "703554",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/joe-show-youssef-hussein-live-in-washington-d-c-20-jun",
+      "title": "Joe Show (Youssef Hussein) Live in Washington, D.C.",
+      "date": "Jun 20, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "710896",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/john-cameron-mitchell-hedwig-25th-anniversary-tour-29-sep",
+      "title": "John Cameron Mitchell - Hedwig 25th Anniversary Movie Tour",
+      "date": "Sep 29, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "680607",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/john-k-14-jul",
+      "title": "John K.",
+      "date": "Jul 14, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "713394",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/josh-tatofi-15-aug",
+      "title": "Josh Tatofi",
+      "date": "Aug 15, 2026",
+      "venue": "Union Stage",
+      "opendateId": "695481",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/joshua-radin-26-sep",
+      "title": "Joshua Radin",
+      "date": "Sep 26, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "700006",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/juicy-j-project-pat-24-jul",
+      "title": "Goldcoast Ent & USP Present: Juicy J & Project Pat",
+      "date": "Jul 24, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "674464",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/julia-cole-17-oct",
+      "title": "Julia Cole",
+      "date": "Oct 17, 2026",
+      "venue": "Union Stage",
+      "opendateId": "710346",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/julieta-venegas-nortena-tour-2026-31-jul",
+      "title": "JULIETA VENEGAS - NORTE\u00d1A US TOUR 2026",
+      "date": "Jul 31, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "669582",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/justin-nozuka-06-oct",
+      "title": "Justin Nozuka",
+      "date": "Oct 06, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "688210",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/kaigaim-s-an-idolm-ster-tribute-live-07-aug",
+      "title": "KaigaiM@S: An iDOLM@STER Tribute Live!",
+      "date": "Aug 07, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "711498",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/kelsey-lu-so-help-me-god-tour-06-oct",
+      "title": "Kelsey Lu: So Help Me God Tour",
+      "date": "Oct 06, 2026",
+      "venue": "Union Stage",
+      "opendateId": "683270",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/kenny-mason-american-bulldawg-tour-20-jun",
+      "title": "Kenny Mason - American BULLDAWG Tour",
+      "date": "Jun 20, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "655584",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/kill-bill-the-rapper-i-found-the-end-tour-16-aug",
+      "title": "Kill Bill the Rapper: I FOUND THE END TOUR",
+      "date": "Aug 16, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "682875",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/kim-richey-10-may",
+      "title": "Kim Richey with Special Guest Caroline Spence",
+      "date": "Jun 03, 2027",
+      "venue": "Jammin' Java",
+      "opendateId": "599981",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/kontrolled-khaos-band-outside-all-summer-29-aug",
+      "title": "Kontrolled Khaos Band - Outside All Summer",
+      "date": "Aug 29, 2026",
+      "venue": "Union Stage",
+      "opendateId": "701215",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/kruder-dorfmeister-k-d-kicks-30-anniversary-tour-03-oct",
+      "title": "Kruder & Dorfmeister - K&D Kicks 30 Anniversary Tour",
+      "date": "Oct 03, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "669096",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/kurt-vile-and-the-violators-22-jul",
+      "title": "Kurt Vile And The Violators",
+      "date": "Jul 22, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "636146",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/kyle-gordon-05-dec",
+      "title": "Kyle Gordon",
+      "date": "Dec 05, 2026",
+      "venue": "Union Stage",
+      "opendateId": "655061",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/l7-the-last-hurrah-tour-2026-21-oct",
+      "title": "L7: THE LAST HURRAH TOUR 2026",
+      "date": "Oct 21, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "680328",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/lake-drive-05-jul",
+      "title": "Lake Drive",
+      "date": "Jul 05, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "687682",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/laura-veirs-08-oct",
+      "title": "Laura Veirs",
+      "date": "Oct 08, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "656087",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/lewis-ofman-50kwtts-north-american-tour-10-oct",
+      "title": "Lewis OfMan - 50KWTTS North American Tour",
+      "date": "Oct 10, 2026",
+      "venue": "Union Stage",
+      "opendateId": "687318",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/loud-and-live-presents-clarent-usa-tour-23-jul",
+      "title": "Loud and Live Presents Clarent USA TOUR",
+      "date": "Jul 23, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "688316",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/lovett-or-leave-it-live-from-dc-06-nov",
+      "title": "Lovett or Leave It: LIVE from DC",
+      "date": "Nov 06, 2026",
+      "venue": "Capital Turnaround",
+      "opendateId": "682822",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/low-cut-connie-23-oct",
+      "title": "Low Cut Connie",
+      "date": "Oct 23, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "655415",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/luh-tyler-destined-for-greatness-tour-02-aug",
+      "title": "Luh Tyler - Destined For Greatness Tour",
+      "date": "Aug 02, 2026",
+      "venue": "Union Stage",
+      "opendateId": "701299",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/luke-borchelt-18-aug",
+      "title": "Luke Borchelt",
+      "date": "Aug 18, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "713387",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/luke-kidgell-29-oct",
+      "title": "Luke Kidgell",
+      "date": "Oct 29, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "651564",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/mack-keane-the-wide-eyed-tour-11-jul",
+      "title": "Mack Keane - The Wide Eyed Tour",
+      "date": "Jul 11, 2026",
+      "venue": "Union Stage",
+      "opendateId": "692819",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/madame-joyce-the-purple-couch-tour-13-sep",
+      "title": "Madame Joyce: The Purple Couch Tour",
+      "date": "Sep 13, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "701176",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/maddie-zahm-everything-all-the-time-tour-23-oct",
+      "title": "Maddie Zahm - Everything All The Time Tour",
+      "date": "Oct 23, 2026",
+      "venue": "Union Stage",
+      "opendateId": "671281",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/madison-ryann-ward-the-standing-tall-tour-26-sep",
+      "title": "Madison Ryann Ward - The Standing Tall Tour",
+      "date": "Sep 26, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "712285",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/magenta-wave-11-oct",
+      "title": "Magenta Wave",
+      "date": "Oct 11, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "700149",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/maya-de-vitry-12-nov",
+      "title": "Maya de Vitry",
+      "date": "Nov 12, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "710188",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/mickey-avalon-20-year-anniversary-tour-19-jun",
+      "title": "Mickey Avalon: 20 Year Anniversary Playing the Complete First Album",
+      "date": "Jun 19, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "658773",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/mike-sherm-26-jul",
+      "title": "Mike Sherm",
+      "date": "Jul 26, 2026",
+      "venue": "Union Stage",
+      "opendateId": "696153",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/mrg-live-presents-kristin-key-the-ca-caw-tour-03-oct",
+      "title": "MRG Live Presents: Kristin Key: The Ca-Caw Tour",
+      "date": "Oct 03, 2026",
+      "venue": "Capital Turnaround",
+      "opendateId": "700139",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/mustard-service-27-aug",
+      "title": "Mustard Service",
+      "date": "Aug 27, 2026",
+      "venue": "Union Stage",
+      "opendateId": "678685",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/my-chemical-romance-the-black-parade-2026-18-aug",
+      "title": "MY CHEMICAL ROMANCE: THE BLACK PARADE 2026",
+      "date": "Aug 18, 2026",
+      "venue": "Plaza Stage at Nationals Park",
+      "opendateId": "669612",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/naomi-sharon-20-sep",
+      "title": "Naomi Sharon - No Sleep In Paradise Tour",
+      "date": "Sep 20, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "678727",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/neighbor-31-jul",
+      "title": "NEIGHBOR",
+      "date": "Jul 31, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "670081",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/neon-habits-album-release-21-jun",
+      "title": "Neon Habits Album Release",
+      "date": "Jun 21, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "686117",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/nite-06-aug",
+      "title": "Nite",
+      "date": "Aug 06, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "685615",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/noah-kahan-the-great-divide-2026-22-jul",
+      "title": "Noah Kahan: The Great Divide 2026",
+      "date": "Jul 22, 2026",
+      "venue": "Plaza Stage at Nationals Park",
+      "opendateId": "669606",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/noname-10yr-anniversary-of-telefone-09-aug",
+      "title": "NONAME - 10yr Anniversary of Telefone",
+      "date": "Aug 09, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "692122",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/not-at-howard-bill-murray-his-blood-brothers-20-jun",
+      "title": "(NOT AT HOWARD) Bill Murray & His Blood Brothers",
+      "date": "Jun 20, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "681969",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/not-at-union-stage-bill-murray-his-blood-brothers-20-jun",
+      "title": "(NOT AT UNION STAGE) Bill Murray & His Blood Brothers",
+      "date": "Jun 20, 2026",
+      "venue": "Union Stage",
+      "opendateId": "691769",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/npr-presents-tiny-desk-contest-on-the-road-2026-11-jul",
+      "title": "NPR Presents: Tiny Desk Contest  On The Road 2026",
+      "date": "Jul 11, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "638260",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/oct-08-oct",
+      "title": "OCT",
+      "date": "Oct 08, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "671109",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/off-book-tour-de-force-a-force-of-tour-27-jun",
+      "title": "Off Book: Tour de Force (A Force of Tour)",
+      "date": "Jun 27, 2026",
+      "venue": "Capital Turnaround",
+      "opendateId": "683095",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/oliver-hazard-28-jul",
+      "title": "Oliver Hazard - The Waterville Tour",
+      "date": "Jul 28, 2026",
+      "venue": "Union Stage",
+      "opendateId": "689154",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/only-friends-dream-on-fan-meeting-gmmtv-thailand-presented-by-myownmoves-llc-06-sep",
+      "title": "Only Friends: Dream On Fan Meeting - GMMTV Thailand Presented by MyOwnMoves, LLC",
+      "date": "Sep 06, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "715730",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/opal-in-sky-26-sep",
+      "title": "Opal In Sky",
+      "date": "Sep 26, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "670121",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/our-lady-peace-30-sep",
+      "title": "Our Lady Peace",
+      "date": "Sep 30, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "688388",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/outback-presents-crashing-out-live-02-oct",
+      "title": "Outback Presents CRASHING OUT LIVE",
+      "date": "Oct 02, 2026",
+      "venue": "Capital Turnaround",
+      "opendateId": "688337",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/papercut-a-tribute-to-linkin-park-01-aug",
+      "title": "Papercut - A Tribute to Linkin Park",
+      "date": "Aug 01, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "670040",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/party-iconic-presents-off-campus-11-jul",
+      "title": "party iconic presents: OFF CAMPUS",
+      "date": "Jul 11, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "714166",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/paula-cole-this-fire-30-19-nov",
+      "title": "Paula Cole THIS FIRE: 30",
+      "date": "Nov 19, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "668072",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/pearse-abbey-sabrina-single-launch-11-jul",
+      "title": "Pearse Abbey: \"Sabrina\" Single Launch",
+      "date": "Jul 11, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "713307",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/perfect-person-live-the-grey-area-tour-26-aug",
+      "title": "Perfect Person Live: The Grey Area Tour",
+      "date": "Aug 26, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "713870",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/perreo-electrico-14-aug",
+      "title": "Perreo El\u00e9ctrico",
+      "date": "Aug 14, 2026",
+      "venue": "Union Stage",
+      "opendateId": "682799",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/peter-mulvey-jenna-nicholls-present-floyd-mercantile-28-jun",
+      "title": "Peter Mulvey & Jenna Nicholls Present: Floyd Mercantile",
+      "date": "Jun 28, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "669772",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/phoebe-robinson-feral-fired-up-17-oct",
+      "title": "Phoebe Robinson: Feral & Fired Up",
+      "date": "Oct 17, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "674043",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/phoebe-ryan-mine-yours-the-tour-20-sep",
+      "title": "Phoebe Ryan Mine & Yours: The Tour",
+      "date": "Sep 20, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "685409",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/post-sex-nachos-27-sep",
+      "title": "Post Sex Nachos",
+      "date": "Sep 27, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "672875",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/pradabagshawty-presents-the-five-problems-tour-18-jun",
+      "title": "Pradabagshawty presents: The Five Problems Tour",
+      "date": "Jun 18, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "659303",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/private-event-52812",
+      "title": "Private Event",
+      "date": "Oct 10, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80473",
+      "title": "Private Event",
+      "date": "Jul 23, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80475",
+      "title": "Private Event",
+      "date": "Sep 25, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80476",
+      "title": "Private Event",
+      "date": "Mar 06, 2027",
+      "venue": "Jammin' Java",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80478",
+      "title": "Private Event",
+      "date": "Sep 30, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80480",
+      "title": "Private Event",
+      "date": "Sep 19, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80481",
+      "title": "Private Event",
+      "date": "Nov 07, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80483",
+      "title": "Private Event",
+      "date": "Sep 19, 2026",
+      "venue": "Union Stage",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80485",
+      "title": "Private Event",
+      "date": "Oct 24, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80488",
+      "title": "Private Event",
+      "date": "Sep 28, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80489",
+      "title": "Private Event",
+      "date": "Nov 06, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80491",
+      "title": "Private Event",
+      "date": "Nov 09, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80492",
+      "title": "Private Event",
+      "date": "Nov 10, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80493",
+      "title": "Private Event",
+      "date": "Nov 03, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80494",
+      "title": "Private Event",
+      "date": "Dec 09, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80495",
+      "title": "Private Event",
+      "date": "Oct 16, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80496",
+      "title": "Private Event",
+      "date": "Jun 19, 2027",
+      "venue": "Jammin' Java",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80497",
+      "title": "Private Event",
+      "date": "Nov 05, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80499",
+      "title": "Private Event",
+      "date": "Jun 30, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80500",
+      "title": "Private Event",
+      "date": "Jun 16, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80502",
+      "title": "Private Event",
+      "date": "Sep 02, 2026",
+      "venue": "Union Stage",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80504",
+      "title": "Private Event",
+      "date": "Jun 29, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80505",
+      "title": "Private Event",
+      "date": "Dec 10, 2026",
+      "venue": "Union Stage",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-80506",
+      "title": "Private Event",
+      "date": "Aug 30, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/private-event-bfbfb",
+      "title": "Private Event",
+      "date": "Aug 08, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": null,
+      "image": null,
+      "private": true
+    },
+    {
+      "slug": "/shows/project-250-the-biggest-independence-day-party-04-jul",
+      "title": "PROJECT 250 \"THE BIGGEST INDEPENDENCE DAY PARTY\"",
+      "date": "Jul 04, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "715719",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/puppeteers-for-fears-24-jul",
+      "title": "Puppeteers For Fears",
+      "date": "Jul 24, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "670051",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/r2bees-refuse-to-be-over-tour-live-in-dc-powered-by-mamusa-events-safcom-group-28-jun",
+      "title": "R2Bees \u2013 Refuse To Be Over Tour (Live in DC) Powered by Mamusa Events & Safcom Group",
+      "date": "Jun 28, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "695276",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/raphael-ghanem-apresenta-a-carne-so-cai-no-prato-do-vegano-14-aug",
+      "title": "RAPHAEL GHANEM APRESENTA: A CARNE S\u00d3 CAI NO PRATO DO VEGANO",
+      "date": "Aug 14, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "685326",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/rave-jesus-24-jul",
+      "title": "Rave Jesus",
+      "date": "Jul 24, 2026",
+      "venue": "Union Stage",
+      "opendateId": "694092",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/rawhoney-05-sep",
+      "title": "RAWHONEY",
+      "date": "Sep 05, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "679388",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/red-worship-21-jun",
+      "title": "Red Worship",
+      "date": "Jun 21, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "688734",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/rezn-cycles-in-the-infinite-dream-tour-02-sep",
+      "title": "REZN - Cycles in the Infinite Dream Tour",
+      "date": "Sep 02, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "649599",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/riley-20-jul",
+      "title": "Riley!",
+      "date": "Jul 20, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "709158",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/rocketship-a-certain-smile-a-certain-sadness-30th-anniversary-tour-28-sep",
+      "title": "Rocketship: \"A Certain Smile, A Certain Sadness\u201d 30th Anniversary Tour",
+      "date": "Sep 28, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "680878",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/royal-the-serpent-emptiness-is-godly-20-jun",
+      "title": "Royal & The Serpent - Emptiness is Godly",
+      "date": "Jun 20, 2026",
+      "venue": "Union Stage",
+      "opendateId": "682938",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/rum-jungle-09-sep",
+      "title": "Rum Jungle",
+      "date": "Sep 09, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "651677",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/sam-taggart-so-pretty-much-i-m-touring-11-aug",
+      "title": "Sam Taggart - So Pretty Much I'm Touring",
+      "date": "Aug 11, 2026",
+      "venue": "Union Stage",
+      "opendateId": "687601",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/samantha-crain-16-jul",
+      "title": "Samantha Crain",
+      "date": "Jul 16, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "649799",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/santiago-cruz-sigo-en-pie-tour-30-sep",
+      "title": "Santiago Cruz: Sigo En Pie tour",
+      "date": "Sep 30, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "687688",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/satin-jackets-26-sep",
+      "title": "Satin Jackets",
+      "date": "Sep 26, 2026",
+      "venue": "Union Stage",
+      "opendateId": "695839",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/satisfaction-2010-2017-edm-bangers-all-night-long-11-jul",
+      "title": "DANG! - A SOULFUL ELECTRONIC DANCE NIGHT",
+      "date": "Jul 11, 2026",
+      "venue": "Union Stage",
+      "opendateId": "619026",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/scoochie-boochie-24-sep",
+      "title": "Scoochie Boochie",
+      "date": "Sep 24, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "692184",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/seahaven-16-jun",
+      "title": "POSTPONED // Seahaven",
+      "date": "Jun 16, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "671270",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/septemberistheonlytimeithinkofyou-06-jul",
+      "title": "septemberistheonlytimeithinkofyou",
+      "date": "Jul 06, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "711605",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/sewerperson-i-feel-happy-and-i-m-smiling-tour-17-jun",
+      "title": "SEWERPERSON: i feel happy and i\u2019m smiling tour",
+      "date": "Jun 17, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "674340",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/siamese-dreamers-tribute-to-smashing-pumpkins-with-primemoose-tribute-to-primus-27-jun",
+      "title": "90\u2019s Rock Night - a Celebration of Siamese Dream - a Full Album Playthrough (and more) by the Siamese Dreamers",
+      "date": "Jun 27, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "653377",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/sicard-hollow-10-sep",
+      "title": "Sicard Hollow",
+      "date": "Sep 10, 2026",
+      "venue": "Union Stage",
+      "opendateId": "703196",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/silly-goose-the-set-it-off-tour-03-nov",
+      "title": "Silly Goose \u2013 The \u201cSet It Off\u201d Tour",
+      "date": "Nov 03, 2026",
+      "venue": "Union Stage",
+      "opendateId": "705307",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/slow-joy-09-aug",
+      "title": "Slow Joy - I Love You So Much I Could Die Tour",
+      "date": "Aug 09, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "692134",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/slow-magic-17-oct",
+      "title": "Slow Magic",
+      "date": "Oct 17, 2026",
+      "venue": "Union Stage",
+      "opendateId": "647377",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/smerz-17-sep",
+      "title": "Smerz \u2013 Big City Life Tour",
+      "date": "Sep 17, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "683426",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/soda-blonde-17-sep",
+      "title": "Soda Blonde",
+      "date": "Sep 17, 2026",
+      "venue": "Union Stage",
+      "opendateId": "600121",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/soja-with-very-special-guest-pigeons-playing-ping-pong-01-aug",
+      "title": "SOJA with very special guest Pigeons Playing Ping Pong",
+      "date": "Aug 01, 2026",
+      "venue": "Plaza Stage at Nationals Park",
+      "opendateId": "688385",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/sondre-lerche-12-sep",
+      "title": "Sondre Lerche",
+      "date": "Sep 12, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "657333",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/souls-of-mischief-31-jul",
+      "title": "Souls Of Mischief",
+      "date": "Jul 31, 2026",
+      "venue": "Union Stage",
+      "opendateId": "680875",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/southern-culture-on-the-skids-25-sep",
+      "title": "Southern Culture on the Skids",
+      "date": "Sep 25, 2026",
+      "venue": "Union Stage",
+      "opendateId": "640695",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/sparta-14-sep",
+      "title": "Sparta",
+      "date": "Sep 14, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "684866",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/specialists-21-aug",
+      "title": "Specialists",
+      "date": "Aug 21, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "686921",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/spike-nu-expensive-parting-gifts-live-at-pearl-street-15-aug",
+      "title": "Spike Nu: Expensive Parting Gifts Live at Pearl Street",
+      "date": "Aug 15, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "679679",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/squirrel-flower-01-oct",
+      "title": "Squirrel Flower",
+      "date": "Oct 01, 2026",
+      "venue": "Union Stage",
+      "opendateId": "679692",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/stephen-day-the-self-titled-tour-18-oct",
+      "title": "Stephen Day: The Self Titled Tour",
+      "date": "Oct 18, 2026",
+      "venue": "Union Stage",
+      "opendateId": "648184",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/strict-scrutiny-live-from-dc-06-nov",
+      "title": "Strict Scrutiny: LIVE from DC",
+      "date": "Nov 06, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "682910",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/subhumans-19-jun",
+      "title": "Subhumans",
+      "date": "Jun 19, 2026",
+      "venue": "Union Stage",
+      "opendateId": "653831",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/sunny-rave-07-aug",
+      "title": "Sunny Rave",
+      "date": "Aug 07, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "696836",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/sweeping-promises-13-nov",
+      "title": "Sweeping Promises",
+      "date": "Nov 13, 2026",
+      "venue": "Union Stage",
+      "opendateId": "685749",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/tag-the-athletic-group-an-experiential-wellness-event-22-aug",
+      "title": "TAG \u2014 The Athletic Group: An Experiential Wellness Event",
+      "date": "Aug 22, 2026",
+      "venue": "Union Stage",
+      "opendateId": "709297",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/tag-the-athletic-group-an-experiential-wellness-event-25-jul",
+      "title": "TAG \u2014 The Athletic Group: An Experiential Wellness Event",
+      "date": "Jul 25, 2026",
+      "venue": "Union Stage",
+      "opendateId": "709295",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/tag-the-athletic-group-an-experiential-wellness-event-28-jun",
+      "title": "TAG \u2014 The Athletic Group: An Experiential Wellness Event",
+      "date": "Jun 28, 2026",
+      "venue": "Union Stage",
+      "opendateId": "709266",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/teen-jesus-and-the-jean-teasers-08-nov",
+      "title": "Teen Jesus and the Jean Teasers",
+      "date": "Nov 08, 2026",
+      "venue": "Union Stage",
+      "opendateId": "670300",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/that-handsome-devil-15-aug",
+      "title": "That Handsome Devil",
+      "date": "Aug 15, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "690288",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-1-urban-stage-play-man-of-the-house-22-aug-db82a",
+      "title": "The #1 Urban Stage Play \"Man Of The House\"",
+      "date": "Aug 22, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "691432",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-1-urban-stage-play-man-of-the-house-22-aug",
+      "title": "The #1 Urban Stage Play \"Man Of The House\"",
+      "date": "Aug 22, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "654949",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-band-solstice-26-jun",
+      "title": "the band solstice",
+      "date": "Jun 26, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "659465",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-barons-the-jellies-06-aug",
+      "title": "The Barons + The Jellies",
+      "date": "Aug 06, 2026",
+      "venue": "Union Stage",
+      "opendateId": "711406",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-bends-if-you-insist-tour-17-nov",
+      "title": "The Bends \u2013 If You Insist Tour",
+      "date": "Nov 17, 2026",
+      "venue": "Union Stage",
+      "opendateId": "655625",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-bros-landreth-tumbling-wild-tour-2026-26-sep",
+      "title": "The Bros. Landreth: Tumbling Wild Tour 2026",
+      "date": "Sep 26, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "639337",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-callous-daoboys-heaven-across-north-america-08-sep",
+      "title": "The Callous Daoboys \u2013 Heaven Across North America",
+      "date": "Sep 08, 2026",
+      "venue": "Union Stage",
+      "opendateId": "682098",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-cassaday-concoction-29-aug",
+      "title": "The Cassaday Concoction",
+      "date": "Aug 29, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "674107",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-click-five-for-lovers-tour-07-aug",
+      "title": "The Click Five - For Lovers Tour",
+      "date": "Aug 07, 2026",
+      "venue": "Union Stage",
+      "opendateId": "688751",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-dimeslots-friends-family-event-11-jul",
+      "title": "(PRIVATE) The Dimeslots Friends & Family Event",
+      "date": "Jul 11, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "667802",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-fiery-furnaces-17-jun",
+      "title": "An Evening with The Fiery Furnaces",
+      "date": "Jun 17, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "686898",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-fretliners-08-jul",
+      "title": "An Evening with The Fretliners",
+      "date": "Jul 08, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "687730",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-garrett-boys-23-jul",
+      "title": "The Garrett Boys",
+      "date": "Jul 23, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "691770",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-holdup-24-sep",
+      "title": "The Holdup",
+      "date": "Sep 24, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "680587",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-howard-theatre-stacy-j-productions-x-gmitch-llc-present-the-stage-play-if-you-loved-me-a-contemporary-urban-drama-about-love-secrets-and-th",
+      "title": "THE STAGE PLAY- IF YOU LOVED ME - A Contemporary Urban Drama about Love, Secrets, and the Cost of Healing WRITTEN AND DIRECTED BY STACY J. HARRELL",
+      "date": "Jun 27, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "653939",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-innocence-mission-07-nov",
+      "title": "The Innocence Mission",
+      "date": "Nov 07, 2026",
+      "venue": "Union Stage",
+      "opendateId": "688344",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-jerrymanders-14-aug",
+      "title": "The Jerrymanders",
+      "date": "Aug 14, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "689213",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-jungle-giants-experiencing-feelings-of-joy-03-oct",
+      "title": "The Jungle Giants - Experiencing Feelings of Joy",
+      "date": "Oct 03, 2026",
+      "venue": "Union Stage",
+      "opendateId": "680067",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-jury-experience-24-jul-f300d",
+      "title": "The Jury Experience \u2013 Death by AI: Will Washington DC Deliver Justice?",
+      "date": "Jul 24, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "670980",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-jury-experience-24-jul",
+      "title": "The Jury Experience",
+      "date": "Jul 24, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "654848",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-jury-experience-death-by-ai-will-washington-dc-deliver-justice-18-sep-d43ad",
+      "title": "The Jury Experience \u2013 Death by AI: Will Washington DC Deliver Justice?",
+      "date": "Sep 18, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "674320",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-jury-experience-death-by-ai-will-washington-dc-deliver-justice-18-sep",
+      "title": "The Jury Experience \u2013 Death by AI: Will Washington DC Deliver Justice?",
+      "date": "Sep 18, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "674322",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-nields-20-mar",
+      "title": "The Nields",
+      "date": "Mar 20, 2027",
+      "venue": "Jammin' Java",
+      "opendateId": "713038",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-orange-slices-and-fake-radio-double-album-release-show-26-jul",
+      "title": "The Orange Slices and Fake Radio - Double Album Release Show",
+      "date": "Jul 26, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "692091",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-philharmonik-and-wyatt-waddell-10-aug",
+      "title": "THE PHILHARMONIK AND WYATT WADDELL",
+      "date": "Aug 10, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "712993",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-pineapple-thief-far-and-wide-tour-2026-17-nov",
+      "title": "The Pineapple Thief Far and Wide Tour 2026",
+      "date": "Nov 17, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "649143",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-rest-is-politics-u-s-the-battle-for-america-midterms-tour-2026-09-oct",
+      "title": "The Rest is Politics U.S. - The Battle for America: Midterms Tour 2026",
+      "date": "Oct 09, 2026",
+      "venue": "Capital Turnaround",
+      "opendateId": "682621",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-ries-brothers-18-jul",
+      "title": "The Ries Brothers",
+      "date": "Jul 18, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "688667",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-school-of-rock-allstars-tour-21-jul",
+      "title": "The School of Rock AllStars Tour",
+      "date": "Jul 21, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "669765",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-strike-plus-special-guest-08-jul",
+      "title": "The Strike  plus special guest SUM SUN",
+      "date": "Jul 08, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "656823",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-tear-garden-the-legendary-pink-dots-cevin-key-28-sep",
+      "title": "The Tear Garden (The Legendary Pink Dots & cEvin Key)",
+      "date": "Sep 28, 2026",
+      "venue": "Union Stage",
+      "opendateId": "686997",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-wilder-blue-18-jun",
+      "title": "The Wilder Blue",
+      "date": "Jun 18, 2026",
+      "venue": "Union Stage",
+      "opendateId": "679014",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the-wildwoods-19-jul",
+      "title": "The Wildwoods",
+      "date": "Jul 19, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "680944",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/the9ambanger-presents-rnb-at-9am-18-jul",
+      "title": "THE9AMBANGER PRESENTS: RNB at 9AM",
+      "date": "Jul 18, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "695430",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/therapy-gecko-27-aug",
+      "title": "Therapy Gecko",
+      "date": "Aug 27, 2026",
+      "venue": "The Miracle Theatre",
+      "opendateId": "649808",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/this-is-at-fillmore-hulvey-08-sep",
+      "title": "(This show is @ Fillmore) HULVEY",
+      "date": "Sep 08, 2026",
+      "venue": "Union Stage",
+      "opendateId": "674044",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/through-the-griffin-tour-hosted-by-the-super-carlin-brothers-16-sep",
+      "title": "Through the Griffin TOUR: Hosted by the Super Carlin Brothers",
+      "date": "Sep 16, 2026",
+      "venue": "Union Stage",
+      "opendateId": "669225",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/tiara-gemstones-presents-anime-rave-17-jul",
+      "title": "TIARA & His Precious Gemstones Presents Anime Rave",
+      "date": "Jul 17, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "686955",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/tobacco-road-morrissey-blvd-16-jul",
+      "title": "Tobacco Road + Morrissey Blvd",
+      "date": "Jul 16, 2026",
+      "venue": "Union Stage",
+      "opendateId": "674155",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/topoppgen-08-jul",
+      "title": "TopOppGen",
+      "date": "Jul 08, 2026",
+      "venue": "Union Stage",
+      "opendateId": "682843",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/trae-sheehan-tom-hampton-15-jul",
+      "title": "Trae Sheehan & Tom Hampton",
+      "date": "Jul 15, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "686186",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/trailin-smoke-25-jul",
+      "title": "Trailin' Smoke",
+      "date": "Jul 25, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "686658",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/unsane-04-oct",
+      "title": "Unsane",
+      "date": "Oct 04, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "669708",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/upon-your-dead-body-29-sep",
+      "title": "Upon your Dead Body",
+      "date": "Sep 29, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "695472",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/vacation-manor-17-sep",
+      "title": "Vacation Manor",
+      "date": "Sep 17, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "687729",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/very-last-resort-03-jul",
+      "title": "Very Last Resort",
+      "date": "Jul 03, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "696137",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/vwillz-the-long-story-short-tour-16-sep",
+      "title": "VWILLZ - The Long Story Short Tour",
+      "date": "Sep 16, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "687544",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/wale-everything-is-a-lot-live-in-the-district-with-ucb-original-band-foggieraw-21-jun",
+      "title": "Wale - everything is a lot. live in the district with UCB (original band) & foggieraw.",
+      "date": "Jun 21, 2026",
+      "venue": "Plaza Stage at Nationals Park",
+      "opendateId": "679676",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/wale-smino-everything-is-tour-20-jun",
+      "title": "Wale & Smino - Everything Is A Lot. The Tour",
+      "date": "Jun 20, 2026",
+      "venue": "Plaza Stage at Nationals Park",
+      "opendateId": "668833",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/wandering-bird-09-jul",
+      "title": "Wandering Bird",
+      "date": "Jul 09, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "686664",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/water-boyz-presents-chris-travis-performing-live-the-prefix-tour-17-jun",
+      "title": "Water Boyz Presents Chris Travis Performing Live! THE PREFIX TOUR",
+      "date": "Jun 17, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "687797",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/wax-dj-hoppa-with-grieves-12-sep",
+      "title": "Wax + DJ Hoppa with Grieves",
+      "date": "Sep 12, 2026",
+      "venue": "Union Stage",
+      "opendateId": "695439",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/wax-monkey-25-jul",
+      "title": "Wax Monkey",
+      "date": "Jul 25, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "659464",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/way-dynamic-18-sep",
+      "title": "Way Dynamic",
+      "date": "Sep 18, 2026",
+      "venue": "Union Stage",
+      "opendateId": "685330",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/weatherday-hornet-disaster-tour-2026-02-oct",
+      "title": "Weatherday - Hornet Disaster Tour 2026",
+      "date": "Oct 02, 2026",
+      "venue": "Union Stage",
+      "opendateId": "631946",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/wesley-joseph-13-oct",
+      "title": "Wesley Joseph - The Forever Tour 2026",
+      "date": "Oct 13, 2026",
+      "venue": "Union Stage",
+      "opendateId": "684040",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/white-ford-bronco-dc-s-all-90s-band-08-aug",
+      "title": "WHITE FORD BRONCO: DC's ALL 90s BAND",
+      "date": "Aug 08, 2026",
+      "venue": "Union Stage",
+      "opendateId": "650767",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/will-varley-21-oct",
+      "title": "Will Varley",
+      "date": "Oct 21, 2026",
+      "venue": "Jammin' Java",
+      "opendateId": "678671",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/will-wood-23-aug",
+      "title": "(THIS SHOW IS @ THE FILLMORE) Will Wood",
+      "date": "Aug 23, 2026",
+      "venue": "Union Stage",
+      "opendateId": "656452",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/wim-tapley-the-cannons-10-jul",
+      "title": "Wim Tapley & The Cannons",
+      "date": "Jul 10, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "682640",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/wpgc-95-5-and-thegogo-co-present-a-celebration-of-dj-flexx-s-30-years-at-wpgc-ft-northeast-groovers-26-jun",
+      "title": "WPGC 95.5 and thegogo.co Present A Celebration of DJ Flexx\u2019s 30 Years at WPGC ft. NORTHEAST GROOVERS & Major League",
+      "date": "Jun 26, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "669086",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/wu-lyf-17-jul-ss6g2",
+      "title": "WU LYF",
+      "date": "Jul 17, 2026",
+      "venue": "Union Stage",
+      "opendateId": "618266",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/yo-quiero-bailar-fest-perreo-vs-dembow-10-jul",
+      "title": "Yo Quiero Bailar Fest - Perreo vs. Dembow",
+      "date": "Jul 10, 2026",
+      "venue": "The Howard Theatre",
+      "opendateId": "714252",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/yoi-toki-a-future-funk-vaporwave-party-feat-saint-pepsi-04-sep",
+      "title": "Yoi Toki - A Future Funk/Vaporwave Party feat. Saint Pepsi",
+      "date": "Sep 04, 2026",
+      "venue": "Union Stage",
+      "opendateId": "701197",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/yuuf-07-jul",
+      "title": "Yuuf",
+      "date": "Jul 07, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "696472",
+      "image": null,
+      "private": false
+    },
+    {
+      "slug": "/shows/zoh-amba-01-aug",
+      "title": "Zoh Amba",
+      "date": "Aug 01, 2026",
+      "venue": "Pearl Street Warehouse",
+      "opendateId": "689215",
+      "image": null,
+      "private": false
+    }
+  ]
+}

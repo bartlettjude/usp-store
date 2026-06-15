@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Plain white t-shirt product photo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f4f2"/>
+      <stop offset="1" stop-color="#e4e4e0"/>
+    </linearGradient>
+    <linearGradient id="fabric" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#fbfbfb"/>
+      <stop offset="1" stop-color="#ededed"/>
+    </linearGradient>
+    <radialGradient id="shadow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#000000" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- studio background -->
+  <rect width="600" height="600" fill="url(#bg)"/>
+
+  <!-- drop shadow under shirt -->
+  <ellipse cx="300" cy="500" rx="190" ry="34" fill="url(#shadow)"/>
+
+  <!-- t-shirt body -->
+  <g>
+    <path fill="url(#fabric)" stroke="#d8d8d4" stroke-width="2" stroke-linejoin="round"
+      d="M222 118
+         C 232 96, 256 86, 300 86
+         C 344 86, 368 96, 378 118
+         L 432 150
+         L 470 214
+         L 426 250
+         L 408 222
+         L 408 470
+         C 408 486, 398 494, 382 494
+         L 218 494
+         C 202 494, 192 486, 192 470
+         L 192 222
+         L 174 250
+         L 130 214
+         L 168 150
+         Z"/>
+
+    <!-- left sleeve seam -->
+    <path fill="none" stroke="#e2e2de" stroke-width="2"
+      d="M192 222 L168 248"/>
+    <!-- right sleeve seam -->
+    <path fill="none" stroke="#e2e2de" stroke-width="2"
+      d="M408 222 L432 248"/>
+
+    <!-- collar -->
+    <path fill="none" stroke="#cfcfca" stroke-width="6" stroke-linecap="round"
+      d="M222 118 C 248 150, 352 150, 378 118"/>
+    <path fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"
+      d="M226 122 C 250 152, 350 152, 374 122"/>
+
+    <!-- subtle fabric folds -->
+    <path fill="none" stroke="#ececea" stroke-width="3" stroke-linecap="round" opacity="0.9"
+      d="M300 168 L300 488"/>
+    <path fill="none" stroke="#f0f0ee" stroke-width="2" stroke-linecap="round" opacity="0.8"
+      d="M250 300 C 256 360, 256 420, 248 480"/>
+    <path fill="none" stroke="#f0f0ee" stroke-width="2" stroke-linecap="round" opacity="0.8"
+      d="M350 300 C 344 360, 344 420, 352 480"/>
+    <path fill="none" stroke="#e8e8e5" stroke-width="2" stroke-linecap="round" opacity="0.7"
+      d="M210 240 C 230 250, 250 250, 270 244"/>
+    <path fill="none" stroke="#e8e8e5" stroke-width="2" stroke-linecap="round" opacity="0.7"
+      d="M330 244 C 350 250, 370 250, 390 240"/>
+  </g>
+</svg>

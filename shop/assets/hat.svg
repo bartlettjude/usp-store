@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Plain white cap product photo">
+  <defs>
+    <linearGradient id="bgc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f4f2"/><stop offset="1" stop-color="#e4e4e0"/>
+    </linearGradient>
+    <linearGradient id="fabc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ededed"/>
+    </linearGradient>
+    <radialGradient id="shc" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#000" stop-opacity="0.18"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bgc)"/>
+  <ellipse cx="300" cy="430" rx="180" ry="30" fill="url(#shc)"/>
+  <!-- crown -->
+  <path fill="url(#fabc)" stroke="#d6d6d2" stroke-width="2" stroke-linejoin="round"
+    d="M150 350 C150 240, 210 178, 300 178 C390 178, 450 240, 450 350
+       C400 372, 340 380, 300 380 C260 380, 200 372, 150 350 Z"/>
+  <!-- panel seams -->
+  <path fill="none" stroke="#e4e4e0" stroke-width="2" d="M300 178 L300 380"/>
+  <path fill="none" stroke="#e9e9e5" stroke-width="2" d="M226 188 C236 270, 240 330, 236 372"/>
+  <path fill="none" stroke="#e9e9e5" stroke-width="2" d="M374 188 C364 270, 360 330, 364 372"/>
+  <!-- button -->
+  <circle cx="300" cy="186" r="9" fill="#fff" stroke="#d2d2ce" stroke-width="2"/>
+  <!-- brim -->
+  <path fill="#f6f6f4" stroke="#d2d2ce" stroke-width="2" stroke-linejoin="round"
+    d="M150 350 C150 350, 120 372, 116 398 C114 412, 130 420, 168 420
+       C240 420, 320 410, 360 392 C392 378, 410 360, 410 350
+       C360 372, 200 372, 150 350 Z"/>
+  <path fill="none" stroke="#e2e2de" stroke-width="1.6" d="M150 360 C220 384, 320 380, 380 360"/>
+  <!-- eyelets -->
+  <circle cx="262" cy="250" r="3" fill="#dadad6"/>
+  <circle cx="338" cy="250" r="3" fill="#dadad6"/>
+</svg>
