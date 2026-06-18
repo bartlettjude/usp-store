@@ -33,7 +33,7 @@ const PRODUCTS = [
   { id: 6,  name: "Heritage Tee",              venue: "mt", cat: "tee",    price: 30, status: "in" },
   { id: 7,  name: "Heavyweight Hoodie",        venue: "us", cat: "hoodie", price: 58, status: "in" },
   { id: 8,  name: "Live From DC Hoodie",       venue: "th", cat: "hoodie", price: 62, status: "in" },
-  { id: 9,  name: "Pullover Hoodie",           venue: "ps", cat: "hoodie", price: 58, status: "lastcall" },
+  { id: 9,  name: "Pullover Hoodie",           venue: "ps", cat: "hoodie", price: 58, status: "soldout" },
   { id: 10, name: "Full-Zip Hoodie",           venue: "jj", cat: "hoodie", price: 64, status: "soldout" },
   { id: 11, name: "Embroidered Dad Cap",       venue: "us", cat: "hat",    price: 30, status: "in" },
   { id: 12, name: "Soul Series Cap",           venue: "th", cat: "hat",    price: 32, status: "in" },
@@ -49,7 +49,7 @@ const PRODUCTS = [
     photo: "assets/stickers/natives-sticker.png" },
 ];
 
-const STAMP = { soldout: "assets/sold-out.svg", lastcall: "assets/last-call.svg" };
+const STAMP = { soldout: "assets/sold-out.svg", lastcall: "assets/sold-out.svg" };
 const byId = (id) => PRODUCTS.find(p => p.id === id);
 const money = (n) => `$${n.toFixed(2)}`;
 
@@ -96,7 +96,7 @@ function cardHTML(p) {
   const mediaMod = p.kind === "poster" ? "card__media--poster"
                  : p.kind === "sticker" ? "card__media--sticker" : "";
   return `
-    <article class="card ${soldout ? "is-soldout" : ""}" style="--card-accent:${v.color}" data-venue="${p.venue}">
+    <article class="card ${soldout ? "is-soldout" : ""}" style="--card-accent:var(--base-light)" data-venue="${p.venue}">
       <div class="card__media ${mediaMod}">
         <img src="${photo}" alt="${p.name}" />
         ${stamp}
@@ -115,6 +115,7 @@ function cardHTML(p) {
 }
 
 function render() {
+  if (!grid) return;                 // product page has no grid — skip
   const list = PRODUCTS.filter(p => activeCat === "all" || p.cat === activeCat);
   grid.innerHTML = list.length
     ? list.map(cardHTML).join("")
@@ -123,7 +124,7 @@ function render() {
 }
 
 /* ---- Category filter chips ---- */
-document.getElementById("filterBar").addEventListener("click", (e) => {
+document.getElementById("filterBar")?.addEventListener("click", (e) => {
   const chip = e.target.closest(".chip");
   if (!chip) return;
   document.querySelectorAll("#filterBar .chip").forEach(c => c.setAttribute("aria-pressed", "false"));
@@ -157,7 +158,7 @@ function addToCart(id) {
   else cart.push({ id, qty: 1 });
   saveCart();
   syncCart();
-  showToast("Added to cart ✓");
+  showToast("in the bag ✓");
 }
 
 function setQty(id, delta) {
@@ -180,7 +181,7 @@ function lineHTML(line) {
   const v = VENUES[p.venue];
   return `
     <li class="line" data-id="${p.id}">
-      <div class="line__thumb" style="--card-accent:${v.color}">
+      <div class="line__thumb" style="--card-accent:var(--base-light)">
         <img src="${p.photo || CATEGORIES[p.cat].photo}" alt="" />
       </div>
       <div class="line__info">
@@ -201,7 +202,7 @@ function syncCart() {
   cartCount.textContent = cartQty();
   cartItems.innerHTML = cart.length
     ? cart.map(lineHTML).join("")
-    : `<li class="cart__empty">Your cart is empty.<br><span>Add some gifts to get started.</span></li>`;
+    : `<li class="cart__empty">nothing here yet 👀<br><span>go grab some merch, bestie.</span></li>`;
   cartTotalEl.textContent = money(cartTotal());
   checkoutBtn.disabled = cart.length === 0;
 }
@@ -210,7 +211,7 @@ function openCart()  { drawer.classList.add("open"); overlay.classList.add("show
 function closeCart() { drawer.classList.remove("open"); overlay.classList.remove("show"); drawer.setAttribute("aria-hidden", "true"); }
 
 /* ---- Add-to-cart from grid ---- */
-grid.addEventListener("click", (e) => {
+grid?.addEventListener("click", (e) => {
   const btn = e.target.closest(".btn-add");
   if (!btn || btn.closest(".is-soldout")) return;
   addToCart(Number(btn.dataset.id));

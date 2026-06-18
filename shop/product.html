@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gift Shop | Union Stage Presents</title>
-  <meta name="description" content="The Union Stage Presents gift shop — tees, hoodies, hats & accessories for DC's live music family." />
+  <title>Product | Union Stage Presents</title>
+  <meta name="description" content="Union Stage Presents gift shop — product detail." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -17,7 +17,7 @@
       </a>
       <nav class="nav__links">
         <a href="#">Shows</a>
-        <a href="#" aria-current="page">Gift Shop</a>
+        <a href="index.html" aria-current="page">Gift Shop</a>
         <a href="#">Venues</a>
         <a href="#">About</a>
       </nav>
@@ -28,44 +28,15 @@
     </div>
   </header>
 
-  <!-- ============ HERO ============ -->
-  <section class="hero">
-    <p class="hero__kicker">OFFICIAL GIFT SHOP · DC'S LIVE MUSIC FAMILY</p>
-    <h1 class="hero__title">GIFT<br><span class="solid">SHOP</span></h1>
-    <p class="hero__sub">
-      the rooms you love, on a fit you'll never take off. tees, hoodies, lids, totes &amp; more
-      from the USP fam — creative expression by anyone, for everyone. ya dig?
-    </p>
-    <div class="hero__rule"></div>
-  </section>
+  <!-- ============ PRODUCT DETAIL ============ -->
+  <main class="pdp" id="pdp"><!-- detail injected by product.js --></main>
 
-  <!-- ============ FILTERS ============ -->
-  <div class="filters">
-    <div class="filters__inner" id="filterBar">
-      <span class="filters__label">Shop</span>
-      <button class="chip chip--all" data-cat="all" aria-pressed="true">All</button>
-      <button class="chip" data-cat="tee">T-Shirts</button>
-      <button class="chip" data-cat="hoodie">Hoodies</button>
-      <button class="chip" data-cat="hat">Hats</button>
-      <button class="chip" data-cat="acc">Accessories</button>
-      <span class="filters__spacer"></span>
-      <span class="filters__count" id="resultCount"></span>
+  <!-- ============ YOU MIGHT ALSO LIKE ============ -->
+  <section class="related" id="relatedSection">
+    <div class="related__head">
+      <h2>you might also <span class="hl hl--accent">dig</span></h2>
     </div>
-  </div>
-
-  <!-- ============ PRODUCT GRID ============ -->
-  <main class="shop">
-    <div class="grid" id="grid"><!-- products injected by app.js --></div>
-  </main>
-
-  <!-- ============ NEWSLETTER ============ -->
-  <section class="news">
-    <h2><span class="hl hl--accent">DON'T SLEEP</span><br>ON THE DROP</h2>
-    <p class="short-copy">new fits land with every tour. hop on the list for first dibs, secret codes &amp; show announcements before anyone else. *no chill required*</p>
-    <form class="news__form" onsubmit="return false;">
-      <input type="email" placeholder="drop your email here ✨" aria-label="Email address" />
-      <button type="submit">I'm In</button>
-    </form>
+    <div class="grid" id="related"><!-- related cards injected by product.js --></div>
   </section>
 
   <!-- ============ FOOTER ============ -->
@@ -89,7 +60,7 @@
       <div class="footer__col">
         <h4>Shop</h4>
         <ul class="footer__links">
-          <li><a href="#">All Gifts</a></li>
+          <li><a href="index.html">All Gifts</a></li>
           <li><a href="#">Shipping</a></li>
           <li><a href="#">Returns</a></li>
           <li><a href="#">Contact</a></li>
@@ -124,5 +95,6 @@
 
   <script src="app.js"></script>
   <script src="detail-link.js"></script>
+  <script src="product.js"></script>
 </body>
 </html>
