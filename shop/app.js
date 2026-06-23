@@ -1,57 +1,6 @@
-/* Union Stage Presents — Gift Shop
-   Product data, venue + category filtering, and a working cart (line items,
-   quantities, subtotal, localStorage). All item photos use plain category
-   mocks (assets/*.svg) per spec. */
-
-const VENUES = {
-  us: { name: "Union Stage",        color: "var(--us)" },
-  th: { name: "The Howard",         color: "var(--th)" },
-  ps: { name: "Pearl Street",       color: "var(--ps)" },
-  jj: { name: "Jammin' Java",       color: "var(--jj)" },
-  mt: { name: "Miracle Theatre",    color: "var(--mt)" },
-  ct: { name: "Capital Turnaround", color: "var(--ct)" },
-  np: { name: "Nationals Park",     color: "var(--np)" },
-};
-
-// category -> default product photo + label. A product may override with its own `photo`.
-const CATEGORIES = {
-  tee:    { label: "T-Shirts",    photo: "assets/tshirt.svg" },
-  hoodie: { label: "Hoodies",     photo: "assets/hoodie.svg" },
-  hat:    { label: "Hats",        photo: "assets/hat.svg" },
-  acc:    { label: "Accessories", photo: "assets/tote.svg" },
-};
-
-// status: "in" | "lastcall" | "soldout"
-const PRODUCTS = [
-  { id: 20, name: "Natives 25th Anniversary Tee", venue: "us", cat: "tee", price: 35, status: "in",
-    photo: "assets/tee-25th.webp" },
-  { id: 1,  name: "Classic Logo Tee",          venue: "us", cat: "tee",    price: 28, status: "in" },
-  { id: 2,  name: "Marquee Tee",               venue: "th", cat: "tee",    price: 32, status: "in" },
-  { id: 3,  name: "Warehouse Tee",             venue: "ps", cat: "tee",    price: 28, status: "lastcall" },
-  { id: 4,  name: "Acoustic Sessions Tee",     venue: "jj", cat: "tee",    price: 26, status: "in" },
-  { id: 5,  name: "Creative Expression Tee",   venue: "us", cat: "tee",    price: 26, status: "in" },
-  { id: 6,  name: "Heritage Tee",              venue: "mt", cat: "tee",    price: 30, status: "in" },
-  { id: 7,  name: "Heavyweight Hoodie",        venue: "us", cat: "hoodie", price: 58, status: "in" },
-  { id: 8,  name: "Live From DC Hoodie",       venue: "th", cat: "hoodie", price: 62, status: "in" },
-  { id: 9,  name: "Pullover Hoodie",           venue: "ps", cat: "hoodie", price: 58, status: "soldout" },
-  { id: 10, name: "Full-Zip Hoodie",           venue: "jj", cat: "hoodie", price: 64, status: "soldout" },
-  { id: 11, name: "Embroidered Dad Cap",       venue: "us", cat: "hat",    price: 30, status: "in" },
-  { id: 12, name: "Soul Series Cap",           venue: "th", cat: "hat",    price: 32, status: "in" },
-  { id: 13, name: "Trucker Cap",               venue: "ct", cat: "hat",    price: 30, status: "in" },
-  { id: 14, name: "Cuffed Beanie",             venue: "ps", cat: "hat",    price: 26, status: "soldout" },
-  { id: 16, name: "Enamel Pin Set",            venue: "jj", cat: "acc",    price: 14, status: "in" },
-  { id: 17, name: "Sticker Pack",              venue: "th", cat: "acc",    price: 10, status: "in" },
-  { id: 22, name: "Natives 25th Anniversary Tote", venue: "us", cat: "acc", price: 24, status: "in",
-    photo: "assets/tote-25th.webp", meta: "Heavyweight Canvas · 15&quot; × 16&quot;" },
-  { id: 19, name: "Natives 25th Anniversary Poster", venue: "us", cat: "acc", kind: "poster", price: 35, status: "in",
-    photo: "assets/posters/natives-poster.jpg" },
-  { id: 21, name: "Natives 25th Anniversary Sticker", venue: "us", cat: "acc", kind: "sticker", price: 5, status: "in",
-    photo: "assets/stickers/natives-sticker.png" },
-];
-
-const STAMP = { soldout: "assets/sold-out.svg", lastcall: "assets/sold-out.svg" };
-const byId = (id) => PRODUCTS.find(p => p.id === id);
-const money = (n) => `$${n.toFixed(2)}`;
+/* Union Stage Presents — Gift Shop · SHOP PAGE
+   Catalog + cart helpers live in data.js (shared). This handles the grid,
+   filtering, and cart drawer. Edit products in data.js, not here. */
 
 /* ============================================================
    STATE
@@ -61,17 +10,8 @@ const resultCount = document.getElementById("resultCount");
 let activeCat = "all";
 
 // cart: array of { id, qty }, persisted to localStorage
-const CART_KEY = "usp-cart";
 let cart = loadCart();
 
-function loadCart() {
-  try {
-    const raw = JSON.parse(localStorage.getItem(CART_KEY) || "[]");
-    return Array.isArray(raw)
-      ? raw.filter(l => byId(l.id) && l.qty > 0).map(l => ({ id: l.id, qty: l.qty | 0 }))
-      : [];
-  } catch { return []; }
-}
 function saveCart() {
   try { localStorage.setItem(CART_KEY, JSON.stringify(cart)); } catch {}
 }
@@ -94,7 +34,8 @@ function cardHTML(p) {
   };
   const meta = p.meta || META[p.kind] || "100% Cotton · Unisex · S–3XL";
   const mediaMod = p.kind === "poster" ? "card__media--poster"
-                 : p.kind === "sticker" ? "card__media--sticker" : "";
+                 : p.kind === "sticker" ? "card__media--sticker"
+                 : p.kind === "print"   ? "card__media--print" : "";
   return `
     <article class="card ${soldout ? "is-soldout" : ""}" style="--card-accent:var(--base-light)" data-venue="${p.venue}">
       <div class="card__media ${mediaMod}">
@@ -235,7 +176,7 @@ document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeCart(
 
 checkoutBtn.addEventListener("click", () => {
   if (!cart.length) return;
-  showToast(`Checkout — ${cartQty()} item${cartQty() === 1 ? "" : "s"}, ${money(cartTotal())}`);
+  window.location.href = "checkout.html";
 });
 
 /* ============================================================

@@ -64,7 +64,7 @@
   root.innerHTML = `
     <a class="pdp__back" href="index.html">← back to the shop</a>
     <div class="pdp__layout">
-      <div class="pdp__media" style="--card-accent:var(--base-light)">
+      <div class="pdp__media${["print","poster","sticker"].includes(p.kind) ? " pdp__media--contain" : ""}" style="--card-accent:var(--base-light)">
         <img src="${photo}" alt="${p.name}" />
         ${stamp}
       </div>

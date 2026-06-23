@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | Union Stage Presents Gift Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="demo-notes.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="index.html" aria-label="Back to gift shop">
+        <img src="assets/logo.webp" alt="Union Stage Presents" />
+      </a>
+      <nav class="nav__links">
+        <a href="index.html">← Back to shop</a>
+      </nav>
+      <span class="nav__spacer"></span>
+      <span class="co__secure mono-up">🔒 Secure Checkout</span>
+    </div>
+  </header>
+
+  <!-- demo banner -->
+  <div class="co__demo">
+    DEMO CHECKOUT · sample order only — no real payment is taken. in production this step is
+    Shopify's secure hosted checkout.
+  </div>
+
+  <main class="co">
+    <div class="co__inner">
+
+      <!-- LEFT: forms -->
+      <section class="co__main">
+        <h1 class="co__title"><span class="hl hl--invert">CHECKOUT</span></h1>
+
+        <form id="checkoutForm" class="co__form" novalidate>
+          <!-- contact -->
+          <fieldset class="co__block">
+            <legend class="co__legend">1 · Contact</legend>
+            <label class="co__field">
+              <span>Email</span>
+              <input type="email" name="email" required placeholder="you@email.com" />
+            </label>
+            <label class="co__check">
+              <input type="checkbox" name="news" checked /> email me with first dibs &amp; secret codes
+            </label>
+          </fieldset>
+
+          <!-- shipping address -->
+          <fieldset class="co__block">
+            <legend class="co__legend">2 · Ship to</legend>
+            <div class="co__row">
+              <label class="co__field"><span>First name</span><input name="first" required placeholder="Jude" /></label>
+              <label class="co__field"><span>Last name</span><input name="last" required placeholder="Bartlett" /></label>
+            </div>
+            <label class="co__field"><span>Address</span><input name="address" required placeholder="123 Main St" /></label>
+            <label class="co__field"><span>Apt / Suite (optional)</span><input name="address2" placeholder="Apt 4B" /></label>
+            <div class="co__row">
+              <label class="co__field"><span>City</span><input name="city" required placeholder="Washington" /></label>
+              <label class="co__field co__field--sm"><span>State</span><input name="state" required placeholder="DC" /></label>
+              <label class="co__field co__field--sm"><span>ZIP</span><input name="zip" required placeholder="20001" inputmode="numeric" /></label>
+            </div>
+          </fieldset>
+
+          <!-- shipping method -->
+          <fieldset class="co__block">
+            <legend class="co__legend">3 · Shipping</legend>
+            <label class="co__ship">
+              <input type="radio" name="ship" value="standard" checked />
+              <span class="co__ship-label">Standard (5–7 days)</span>
+              <span class="co__ship-price">$6.00</span>
+            </label>
+            <label class="co__ship">
+              <input type="radio" name="ship" value="express" />
+              <span class="co__ship-label">Express (2–3 days)</span>
+              <span class="co__ship-price">$14.00</span>
+            </label>
+          </fieldset>
+
+          <!-- payment (demo, read-only) -->
+          <fieldset class="co__block">
+            <legend class="co__legend">4 · Payment</legend>
+            <div class="co__pay">
+              <div class="co__pay-row">
+                <span class="mono-up">Demo card on file</span>
+                <span class="co__pay-card">•••• •••• •••• 4242</span>
+              </div>
+              <p class="co__pay-note short-copy">
+                demo mode — no card is collected or charged. the real shop will hand off to
+                shopify's secure checkout here.
+              </p>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="co__place">Place Order</button>
+          <p class="co__place-note">by placing this (pretend) order you agree to our terms. ya dig?</p>
+        </form>
+      </section>
+
+      <!-- RIGHT: order summary -->
+      <aside class="co__summary" id="summary">
+        <h2 class="co__summary-title mono-up">Your Order</h2>
+        <ul class="co__items" id="coItems"><!-- injected --></ul>
+        <div class="co__totals" id="coTotals"><!-- injected --></div>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__bottom" style="border-top:none; margin-top:0;">
+      <span>© 2026 Union Stage Presents</span>
+      <span>5 venues. 1000s of shows. endless vibes.</span>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="checkout.js"></script>
+  <script src="demo-notes.js"></script>
+</body>
+</html>

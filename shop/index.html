@@ -6,6 +6,7 @@
   <title>Gift Shop | Union Stage Presents</title>
   <meta name="description" content="The Union Stage Presents gift shop — tees, hoodies, hats & accessories for DC's live music family." />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="demo-notes.css" />
 </head>
 <body>
 
@@ -37,6 +38,18 @@
       from the USP fam — creative expression by anyone, for everyone. ya dig?
     </p>
     <div class="hero__rule"></div>
+  </section>
+
+  <!-- ============ 25TH ANNIVERSARY COLLECTION ============ -->
+  <section class="anniv">
+    <div class="anniv__inner">
+      <img class="anniv__mark" src="assets/wordmark-25.png" alt="25 Years of Independent Music" />
+      <div class="anniv__copy">
+        <p class="anniv__kicker mono-up">The 25th Anniversary Collection</p>
+        <p class="anniv__text short-copy">union stage presents is turning 25. celebrate 25 years of independent music with a limited drop — tees, totes, posters &amp; stickers.</p>
+        <a class="anniv__cta" href="#grid">Shop the collection</a>
+      </div>
+    </div>
   </section>
 
   <!-- ============ FILTERS ============ -->
@@ -78,12 +91,13 @@
       <div class="footer__col">
         <h4>Our Venues</h4>
         <ul class="footer__venues">
-          <li><a href="#"><span class="chip__dot" style="background:var(--us)"></span>Union Stage</a></li>
-          <li><a href="#"><span class="chip__dot" style="background:var(--th)"></span>The Howard Theatre</a></li>
-          <li><a href="#"><span class="chip__dot" style="background:var(--ps)"></span>Pearl Street Warehouse</a></li>
-          <li><a href="#"><span class="chip__dot" style="background:var(--jj)"></span>Jammin' Java</a></li>
-          <li><a href="#"><span class="chip__dot" style="background:var(--mt)"></span>Miracle Theatre</a></li>
-          <li><a href="#"><span class="chip__dot" style="background:var(--ct)"></span>Capital Turnaround</a></li>
+          <li><a href="https://www.unionstagepresents.com/union-stage/shows" target="_blank" rel="noopener"><span class="chip__dot" style="background:var(--us)"></span>Union Stage</a></li>
+          <li><a href="https://www.unionstagepresents.com/the-howard/shows" target="_blank" rel="noopener"><span class="chip__dot" style="background:var(--th)"></span>The Howard Theatre</a></li>
+          <li><a href="https://www.unionstagepresents.com/pearl-street/shows" target="_blank" rel="noopener"><span class="chip__dot" style="background:var(--ps)"></span>Pearl Street Warehouse</a></li>
+          <li><a href="https://www.unionstagepresents.com/jammin-java/shows" target="_blank" rel="noopener"><span class="chip__dot" style="background:var(--jj)"></span>Jammin' Java</a></li>
+          <li><a href="https://www.unionstagepresents.com/miracle-theatre/shows" target="_blank" rel="noopener"><span class="chip__dot" style="background:var(--mt)"></span>Miracle Theatre</a></li>
+          <li><a href="https://www.unionstagepresents.com/capital-turnaround/shows" target="_blank" rel="noopener"><span class="chip__dot" style="background:var(--ct)"></span>Capital Turnaround</a></li>
+          <li><a href="https://www.unionstagepresents.com/nationals-park/shows" target="_blank" rel="noopener"><span class="chip__dot" style="background:var(--np)"></span>Nationals Park</a></li>
         </ul>
       </div>
       <div class="footer__col">
@@ -122,7 +136,9 @@
 
   <div class="toast" id="toast">in the bag ✓</div>
 
+  <script src="data.js"></script>
   <script src="app.js"></script>
   <script src="detail-link.js"></script>
+  <script src="demo-notes.js"></script>
 </body>
 </html>
