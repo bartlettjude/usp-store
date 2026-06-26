@@ -174,13 +174,29 @@ document.getElementById("cartClose").addEventListener("click", closeCart);
 overlay.addEventListener("click", closeCart);
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeCart(); });
 
-checkoutBtn.addEventListener("click", () => {
+checkoutBtn.addEventListener("click", async () => {
   if (!cart.length) return;
+  // Live Shopify catalog → hand off to Shopify's hosted checkout.
+  if (window.SHOPIFY_LIVE && typeof window.shopifyCheckout === "function") {
+    try {
+      const url = await window.shopifyCheckout(cart);
+      if (url) { window.location.href = url; return; }
+    } catch (err) {
+      console.warn("[shopify] checkout failed, using demo flow:", err.message);
+    }
+  }
+  // Demo mode (no products yet) → the mock checkout page.
   window.location.href = "checkout.html";
 });
 
 /* ============================================================
-   INIT
+   INIT — wait for the live Shopify catalog (if configured) before the
+   first paint, then re-filter the cart against whatever catalog is live.
+   window.ShopifyReady is undefined when Shopify isn't set up → renders
+   immediately on the data.js mock catalog.
    ============================================================ */
-render();
-syncCart();
+Promise.resolve(window.ShopifyReady).then(() => {
+  cart = loadCart();
+  render();
+  syncCart();
+});

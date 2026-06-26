@@ -2,6 +2,11 @@
    Reuses the catalog + cart globals defined in app.js (byId, VENUES,
    CATEGORIES, STAMP, money, addToCart, openCart, cardHTML). */
 (function () {
+  // Wait for the live Shopify catalog (if configured) before resolving the
+  // product, so a live-catalog id from the grid resolves correctly on reload.
+  Promise.resolve(window.ShopifyReady).then(init);
+
+  function init() {
   const root = document.getElementById("pdp");
   const id = Number(new URLSearchParams(location.search).get("id"));
   const p = byId(id);
@@ -129,4 +134,5 @@
   } else {
     railSection.style.display = "none";
   }
+  } // init
 })();
