@@ -1,5 +1,6 @@
 /* Union Stage Presents — Gift Shop · SHARED CATALOG + CART HELPERS
-   Single source of truth used by app.js (shop), checkout.js, confirmation.js.
+   Offline fallback catalog + cart helpers, used by app.js and product.js.
+   Live Shopify data replaces window.PRODUCTS whenever the store is reachable.
    Declared as globals so the non-module page scripts can all read them. */
 
 window.VENUES = {
@@ -43,7 +44,6 @@ window.photoOf = (p) =>
 
 /* ---- cart storage (shared keys) ---- */
 window.CART_KEY  = "usp-cart";       // [{id, qty}]
-window.ORDER_KEY = "usp-last-order"; // last placed order (for confirmation page)
 
 window.loadCart = function () {
   try {
@@ -54,7 +54,5 @@ window.loadCart = function () {
   } catch { return []; }
 };
 
-/* ---- shared money math (mock rates) ---- */
-window.SHIPPING = { standard: { label: "Standard (5–7 days)", price: 6 },
-                    express:  { label: "Express (2–3 days)",  price: 14 } };
-window.TAX_RATE = 0.06; // DC sales tax (mock)
+/* Shipping and tax are Shopify's job now — they're calculated at the hosted
+   checkout, not here. The old mock rates lived here until that went live. */

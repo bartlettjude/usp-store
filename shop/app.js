@@ -162,17 +162,27 @@ document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeCart(
 
 checkoutBtn.addEventListener("click", async () => {
   if (!cart.length) return;
-  // Live Shopify catalog → hand off to Shopify's hosted checkout.
-  if (window.SHOPIFY_LIVE && typeof window.shopifyCheckout === "function") {
-    try {
-      const url = await window.shopifyCheckout(cart);
-      if (url) { window.location.href = url; return; }
-    } catch (err) {
-      console.warn("[shopify] checkout failed, using demo flow:", err.message);
-    }
+  // Shopify's hosted checkout is the only checkout — there's no mock flow to
+  // fall back to, so surface a failure rather than silently going nowhere.
+  if (!window.SHOPIFY_LIVE || typeof window.shopifyCheckout !== "function") {
+    console.warn("[shopify] catalog isn't live — checkout unavailable.");
+    showToast("Checkout unavailable — try again shortly");
+    return;
   }
-  // Demo mode (no products yet) → the mock checkout page.
-  window.location.href = "checkout.html";
+  const original = checkoutBtn.textContent;
+  checkoutBtn.disabled = true;
+  checkoutBtn.textContent = "Taking you to checkout…";
+  try {
+    const url = await window.shopifyCheckout(cart);
+    if (url) { window.location.href = url; return; }
+    throw new Error("no checkout URL returned");
+  } catch (err) {
+    console.warn("[shopify] checkout failed:", err.message);
+    showToast("Checkout unavailable — try again shortly");
+  } finally {
+    checkoutBtn.disabled = false;
+    checkoutBtn.textContent = original;
+  }
 });
 
 /* ============================================================
