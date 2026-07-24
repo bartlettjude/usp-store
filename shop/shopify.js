@@ -16,8 +16,8 @@
 
   /* ======== 1. CONFIG — fill these in once you have them (SHOPIFY-SETUP.md) === */
   const SHOPIFY = {
-    domain: "",          // e.g. "union-stage-presents.myshopify.com"
-    storefrontToken: "", // public Storefront API access token
+    domain: "n06dbw-hu.myshopify.com",
+    storefrontToken: "09847a1424324a4c53ffc2f1f4b5b611", // public Storefront API access token
     apiVersion: "2025-01",
     productLimit: 100,    // first N products to pull
   };
