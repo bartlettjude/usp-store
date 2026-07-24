@@ -5,9 +5,7 @@
 /* ============================================================
    STATE
    ============================================================ */
-const grid        = document.getElementById("grid");
-const resultCount = document.getElementById("resultCount");
-let activeCat = "all";
+const grid = document.getElementById("grid");
 
 // cart: array of { id, qty }, persisted to localStorage
 let cart = loadCart();
@@ -57,43 +55,10 @@ function cardHTML(p) {
 
 function render() {
   if (!grid) return;                 // product page has no grid — skip
-  const list = PRODUCTS.filter(p => activeCat === "all" || p.cat === activeCat);
-  grid.innerHTML = list.length
-    ? list.map(cardHTML).join("")
-    : `<p class="grid__empty">No items match these filters.</p>`;
-  resultCount.textContent = `${list.length} item${list.length === 1 ? "" : "s"}`;
+  grid.innerHTML = PRODUCTS.length
+    ? PRODUCTS.map(cardHTML).join("")
+    : `<p class="grid__empty">Nothing in the shop right now.</p>`;
 }
-
-/* ---- Build the category chips from whatever catalog is live ----
-   Only categories with at least one product get a chip, so the demo shows
-   Tees/Accessories while a live Shopify catalog with hoodies or hats grows
-   those chips on its own. */
-function renderChips() {
-  const bar = document.getElementById("filterBar");
-  if (!bar) return;
-  const spacer = document.getElementById("filtersSpacer");
-  bar.querySelectorAll(".chip:not(.chip--all)").forEach(c => c.remove());
-  Object.keys(CATEGORIES)
-    .filter(key => PRODUCTS.some(p => p.cat === key))
-    .forEach(key => {
-      const chip = document.createElement("button");
-      chip.className = "chip";
-      chip.dataset.cat = key;
-      chip.setAttribute("aria-pressed", "false");
-      chip.textContent = CATEGORIES[key].label;
-      bar.insertBefore(chip, spacer);
-    });
-}
-
-/* ---- Category filter chips ---- */
-document.getElementById("filterBar")?.addEventListener("click", (e) => {
-  const chip = e.target.closest(".chip");
-  if (!chip) return;
-  document.querySelectorAll("#filterBar .chip").forEach(c => c.setAttribute("aria-pressed", "false"));
-  chip.setAttribute("aria-pressed", "true");
-  activeCat = chip.dataset.cat;
-  render();
-});
 
 /* ============================================================
    CART
@@ -218,7 +183,6 @@ checkoutBtn.addEventListener("click", async () => {
    ============================================================ */
 Promise.resolve(window.ShopifyReady).then(() => {
   cart = loadCart();
-  renderChips();
   render();
   syncCart();
 });
