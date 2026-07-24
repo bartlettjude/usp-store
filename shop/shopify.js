@@ -73,6 +73,11 @@
     else if (tags.some((t) => t.toLowerCase() === "lastcall")) status = "lastcall";
     else if (qty !== null && qty > 0 && qty <= LASTCALL_THRESHOLD) status = "lastcall";
 
+    // gallery: featured image first, then the rest, de-duped
+    const all = (node.images?.edges || []).map((e) => e.node.url);
+    const featured = node.featuredImage?.url;
+    const photos = [...new Set(featured ? [featured, ...all] : all)];
+
     const variantId = variant?.id || null;
     return {
       id: hashId(variantId || node.id),
@@ -84,23 +89,33 @@
       price: variant ? Number(variant.price.amount) : 0,
       status,
       photo: node.featuredImage?.url || undefined, // undefined -> photoOf() uses category art
+      photos,                                      // drives the PDP thumbnail gallery
     };
   }
 
   /* ======== 3. STOREFRONT API FETCH ========================================== */
-  const QUERY = `
+  /* `quantityAvailable` needs the `unauthenticated_read_product_inventory`
+     scope. Tokens without it get the whole request rejected, not just that
+     field — so build the query both ways and fall back if the scope is
+     missing. Without inventory we lose the ≤5 LAST CALL threshold; the
+     `lastcall` tag and SOLD OUT still work off `availableForSale`. */
+  const buildQuery = (withInventory) => `
     query Catalog($n:Int!){
       products(first:$n){
         edges{ node{
           id title handle productType tags availableForSale
           featuredImage{ url }
+          images(first:10){ edges{ node{ url } } }
           variants(first:1){ edges{ node{
-            id availableForSale quantityAvailable
+            id availableForSale${withInventory ? " quantityAvailable" : ""}
             price{ amount currencyCode }
           }}}
         }}
       }
     }`;
+
+  const isInventoryScopeError = (msg) =>
+    /quantityAvailable/i.test(msg) || /read_product_inventory/i.test(msg);
 
   async function storefront(query, variables) {
     const res = await fetch(
@@ -123,7 +138,18 @@
   async function loadCatalog() {
     if (!configured) return false; // not set up yet — stay on mock
     try {
-      const data = await storefront(QUERY, { n: SHOPIFY.productLimit });
+      let data;
+      try {
+        data = await storefront(buildQuery(true), { n: SHOPIFY.productLimit });
+      } catch (err) {
+        if (!isInventoryScopeError(err.message)) throw err;
+        console.info(
+          "[shopify] no inventory scope — retrying without quantityAvailable. " +
+          "SOLD OUT still works; add `unauthenticated_read_product_inventory` " +
+          "to the Storefront token to re-enable the LAST CALL threshold."
+        );
+        data = await storefront(buildQuery(false), { n: SHOPIFY.productLimit });
+      }
       const nodes = (data.products?.edges || []).map((e) => e.node);
       if (!nodes.length) {
         console.info("[shopify] connected, 0 products — keeping demo catalog.");
