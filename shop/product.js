@@ -23,7 +23,8 @@
   }
 
   const v        = VENUES[p.venue];
-  const photo    = p.photo || CATEGORIES[p.cat].photo;
+  const gallery  = (p.photos && p.photos.length) ? p.photos : [p.photo || CATEGORIES[p.cat].photo];
+  const photo    = gallery[0];
   const META     = { poster: "Giclée Print · 18&quot; × 24&quot;", sticker: "Die-Cut Vinyl · Weatherproof" };
   const meta     = p.meta || META[p.kind] || "100% Cotton · Unisex · S–3XL";
   const soldout  = p.status === "soldout";
@@ -69,9 +70,18 @@
   root.innerHTML = `
     <a class="pdp__back" href="index.html">← back to the shop</a>
     <div class="pdp__layout">
-      <div class="pdp__media${["print","poster","sticker"].includes(p.kind) ? " pdp__media--contain" : ""}" style="--card-accent:var(--base-light)">
-        <img src="${photo}" alt="${p.name}" />
-        ${stamp}
+      <div class="pdp__gallery">
+        <div class="pdp__media${["print","poster","sticker"].includes(p.kind) ? " pdp__media--contain" : ""}" style="--card-accent:var(--base-light)">
+          <img id="pdpMainImg" src="${photo}" alt="${p.name}" />
+          ${stamp}
+        </div>
+        ${gallery.length > 1 ? `
+        <div class="pdp__thumbs" id="pdpThumbs">
+          ${gallery.map((src, i) => `
+          <button class="pdp__thumb${i === 0 ? " is-active" : ""}" data-src="${src}" aria-label="View image ${i + 1} of ${gallery.length}">
+            <img src="${src}" alt="" />
+          </button>`).join("")}
+        </div>` : ""}
       </div>
       <div class="pdp__info">
         <a class="pdp__venue" href="index.html"><span class="chip__dot" style="background:${v.color}"></span>${v.name}</a>
@@ -100,6 +110,16 @@
         </ul>
       </div>
     </div>`;
+
+  /* ---- gallery thumbnails ---- */
+  const thumbs = document.getElementById("pdpThumbs");
+  thumbs?.addEventListener("click", (e) => {
+    const b = e.target.closest(".pdp__thumb");
+    if (!b) return;
+    document.getElementById("pdpMainImg").src = b.dataset.src;
+    thumbs.querySelectorAll(".pdp__thumb").forEach(x => x.classList.remove("is-active"));
+    b.classList.add("is-active");
+  });
 
   /* ---- quantity stepper ---- */
   let qty = 1;
