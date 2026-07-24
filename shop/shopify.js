@@ -39,6 +39,15 @@
   // productType (lowercased) -> special display "kind" (drives the art treatment).
   const KIND_FROM_TYPE = { "poster": "poster", "sticker": "sticker" };
 
+  /* Card subtitle. Priority: a `custom.subtitle` metafield, then the first line
+     of the product description, then this table, then the cotton default in
+     app.js. Quotes are HTML entities because the card is built with innerHTML. */
+  const META_FROM_TYPE = {
+    "tote":    "Heavyweight Canvas · 15&quot; × 16&quot;",
+    "poster":  "Giclée Print · 18&quot; × 24&quot;",
+    "sticker": "Die-Cut Vinyl · Weatherproof",
+  };
+
   const LASTCALL_THRESHOLD = 5; // qty at/below this (when inventory is exposed) = LAST CALL
 
   // tiny stable string -> positive int hash, so cart ids survive reorders
@@ -73,6 +82,14 @@
     else if (tags.some((t) => t.toLowerCase() === "lastcall")) status = "lastcall";
     else if (qty !== null && qty > 0 && qty <= LASTCALL_THRESHOLD) status = "lastcall";
 
+    // subtitle: metafield > first line of description > productType table
+    const escape = (s) => s.replace(/"/g, "&quot;").replace(/</g, "&lt;");
+    const firstLine = (node.description || "").split("\n")[0].trim();
+    const meta =
+      node.metafield?.value?.trim() ? escape(node.metafield.value.trim())
+      : firstLine ? escape(firstLine)
+      : META_FROM_TYPE[type] || undefined;
+
     // gallery: featured image first, then the rest, de-duped
     const all = (node.images?.edges || []).map((e) => e.node.url);
     const featured = node.featuredImage?.url;
@@ -90,6 +107,7 @@
       status,
       photo: node.featuredImage?.url || undefined, // undefined -> photoOf() uses category art
       photos,                                      // drives the PDP thumbnail gallery
+      meta,                                        // card subtitle; undefined -> cotton default
     };
   }
 
@@ -104,6 +122,8 @@
       products(first:$n){
         edges{ node{
           id title handle productType tags availableForSale
+          description
+          metafield(namespace:"custom", key:"subtitle"){ value }
           featuredImage{ url }
           images(first:10){ edges{ node{ url } } }
           variants(first:1){ edges{ node{
