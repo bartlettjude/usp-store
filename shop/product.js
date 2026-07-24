@@ -23,7 +23,7 @@
   }
 
   const v        = VENUES[p.venue];
-  const gallery  = (p.photos && p.photos.length) ? p.photos : [p.photo || CATEGORIES[p.cat].photo];
+  const gallery  = (p.photos && p.photos.length) ? p.photos : [photoOf(p)];
   const photo    = gallery[0];
   const META     = { poster: "Giclée Print · 18&quot; × 24&quot;", sticker: "Die-Cut Vinyl · Weatherproof" };
   const meta     = p.meta || META[p.kind] || "100% Cotton · Unisex · S–3XL";

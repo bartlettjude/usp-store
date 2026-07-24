@@ -13,8 +13,13 @@ window.VENUES = {
 };
 
 // category -> default product photo + label. A product may override with its own `photo`.
+// Every category the Shopify connector can emit (see CAT_FROM_TYPE in shopify.js)
+// must have an entry here. Filter chips are built from whichever of these the
+// live catalog actually uses, so unused ones simply don't show up.
 window.CATEGORIES = {
   tee:    { label: "T-Shirts",    photo: "assets/tshirt.svg" },
+  hoodie: { label: "Hoodies",     photo: "assets/hoodie.svg" },
+  hat:    { label: "Hats",        photo: "assets/hat.svg" },
   acc:    { label: "Accessories", photo: "assets/tote.svg" },
 };
 
@@ -31,7 +36,10 @@ window.PRODUCTS = [
 window.STAMP   = { soldout: "assets/sold-out.svg", lastcall: "assets/sold-out.svg" };
 window.byId    = (id) => window.PRODUCTS.find(p => p.id === id);
 window.money   = (n) => `$${n.toFixed(2)}`;
-window.photoOf = (p) => p.photo || window.CATEGORIES[p.cat].photo;
+// Falls back to Accessories art if a live product carries an unknown `cat:` tag,
+// so a stray category can never blow up the grid render.
+window.photoOf = (p) =>
+  p.photo || (window.CATEGORIES[p.cat] || window.CATEGORIES.acc).photo;
 
 /* ---- cart storage (shared keys) ---- */
 window.CART_KEY  = "usp-cart";       // [{id, qty}]

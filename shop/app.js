@@ -27,7 +27,7 @@ function cardHTML(p) {
     ? `<img class="card__stamp" src="${STAMP[p.status]}" alt="${p.status === "soldout" ? "Sold out" : "Last call"}" />`
     : "";
   const soldout = p.status === "soldout";
-  const photo = p.photo || CATEGORIES[p.cat].photo;
+  const photo = photoOf(p);
   const META = {
     poster:  "Giclée Print · 18&quot; × 24&quot;",
     sticker: "Die-Cut Vinyl · Weatherproof",
@@ -62,6 +62,27 @@ function render() {
     ? list.map(cardHTML).join("")
     : `<p class="grid__empty">No items match these filters.</p>`;
   resultCount.textContent = `${list.length} item${list.length === 1 ? "" : "s"}`;
+}
+
+/* ---- Build the category chips from whatever catalog is live ----
+   Only categories with at least one product get a chip, so the demo shows
+   Tees/Accessories while a live Shopify catalog with hoodies or hats grows
+   those chips on its own. */
+function renderChips() {
+  const bar = document.getElementById("filterBar");
+  if (!bar) return;
+  const spacer = document.getElementById("filtersSpacer");
+  bar.querySelectorAll(".chip:not(.chip--all)").forEach(c => c.remove());
+  Object.keys(CATEGORIES)
+    .filter(key => PRODUCTS.some(p => p.cat === key))
+    .forEach(key => {
+      const chip = document.createElement("button");
+      chip.className = "chip";
+      chip.dataset.cat = key;
+      chip.setAttribute("aria-pressed", "false");
+      chip.textContent = CATEGORIES[key].label;
+      bar.insertBefore(chip, spacer);
+    });
 }
 
 /* ---- Category filter chips ---- */
@@ -123,7 +144,7 @@ function lineHTML(line) {
   return `
     <li class="line" data-id="${p.id}">
       <div class="line__thumb" style="--card-accent:var(--base-light)">
-        <img src="${p.photo || CATEGORIES[p.cat].photo}" alt="" />
+        <img src="${photoOf(p)}" alt="" />
       </div>
       <div class="line__info">
         <p class="line__name">${p.name}</p>
@@ -197,6 +218,7 @@ checkoutBtn.addEventListener("click", async () => {
    ============================================================ */
 Promise.resolve(window.ShopifyReady).then(() => {
   cart = loadCart();
+  renderChips();
   render();
   syncCart();
 });
