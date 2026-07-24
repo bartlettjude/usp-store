@@ -514,7 +514,7 @@ button { font: inherit; cursor: inherit; }
 }
 
 .pdp__gallery { display: flex; flex-direction: column; gap: 0.75rem; }
-.pdp__thumbs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+.pdp__thumbs { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 0.75rem; }
 .pdp__thumb {
   padding: 0; border: 2px solid transparent; background: #efefec;
   aspect-ratio: 1 / 1; overflow: hidden; cursor: pointer; transition: border-color .15s ease;
