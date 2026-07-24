@@ -25,10 +25,10 @@ window.CATEGORIES = {
 
 // status: "in" | "lastcall" | "soldout"
 window.PRODUCTS = [
-  { id: 20, name: "Natives 25th Anniversary Tee", venue: "us", cat: "tee", price: 25, status: "in",
+  { id: 20, name: "25th Tee", venue: "us", cat: "tee", price: 25, status: "in",
     photo: "assets/tee-25th-front.jpg",
     photos: ["assets/tee-25th-front.jpg", "assets/tee-25th-angle.jpg", "assets/tee-25th-tag.jpg", "assets/tee-25th-worn.jpg"] },
-  { id: 22, name: "Natives 25th Anniversary Tote", venue: "us", cat: "acc", price: 25, status: "in",
+  { id: 22, name: "25th Tote Bag", venue: "us", cat: "acc", price: 25, status: "in",
     photo: "assets/tote-25th-front.jpg", meta: "Heavyweight Canvas · 15&quot; × 16&quot;",
     photos: ["assets/tote-25th-front.jpg", "assets/tote-25th-detail.jpg", "assets/tote-25th-detail2.jpg", "assets/tote-25th-strap.jpg", "assets/tote-25th-worn.jpg"] },
 ];
