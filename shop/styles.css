@@ -303,6 +303,25 @@ button { font: inherit; cursor: inherit; }
 }
 .card.is-soldout .card__media img:not(.card__stamp) { filter: grayscale(0.4); }
 
+/* ---- inline size tray (revealed when "Add +" is tapped on a sized card) ---- */
+.card__sizes { display: none; margin-top: 0.6rem; }
+.card.is-picking .card__sizes { display: block; animation: sizes-in .16s ease; }
+.card.is-picking .btn-add { background: var(--base-light); color: var(--base-dark); }
+.card__sizes-label {
+  display: block; font-family: var(--font-header); text-transform: uppercase;
+  font-size: 0.62rem; letter-spacing: 1px; opacity: 0.6; margin-bottom: 0.4rem;
+}
+.card__sizes-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.size-chip {
+  font-family: var(--font-header); text-transform: uppercase; font-size: 0.7rem;
+  letter-spacing: 1px; font-weight: 700; min-width: 2.4rem;
+  background: var(--base-light); color: var(--base-dark);
+  border: 2px solid var(--base-dark); border-radius: var(--radius);
+  padding: 0.4rem 0.5rem; cursor: pointer; transition: all .15s;
+}
+.size-chip:hover { background: var(--base-dark); color: var(--base-light); }
+@keyframes sizes-in { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+
 /* ============================================================
    NEWSLETTER BAND
    ============================================================ */

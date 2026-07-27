@@ -27,6 +27,7 @@ window.CATEGORIES = {
 // status: "in" | "lastcall" | "soldout"
 window.PRODUCTS = [
   { id: 20, name: "25th Tee", venue: "us", cat: "tee", price: 25, status: "in",
+    sizes: ["S", "M", "L", "XL"],
     photo: "assets/tee-25th-front.jpg",
     photos: ["assets/tee-25th-front.jpg", "assets/tee-25th-angle.jpg", "assets/tee-25th-tag.jpg", "assets/tee-25th-worn.jpg"] },
   { id: 22, name: "25th Tote Bag", venue: "us", cat: "acc", price: 25, status: "in",
@@ -41,15 +42,19 @@ window.money   = (n) => `$${n.toFixed(2)}`;
 // so a stray category can never blow up the grid render.
 window.photoOf = (p) =>
   p.photo || (window.CATEGORIES[p.cat] || window.CATEGORIES.acc).photo;
+// Sizes for a product, or null if it has none (e.g. the tote). Works for both
+// the live Shopify catalog (variants → sizes) and this offline fallback.
+window.sizesOf = (p) => (p && p.sizes && p.sizes.length) ? p.sizes : null;
 
 /* ---- cart storage (shared keys) ---- */
-window.CART_KEY  = "usp-cart";       // [{id, qty}]
+window.CART_KEY  = "usp-cart";       // [{id, size, qty}] — id+size is the line identity
 
 window.loadCart = function () {
   try {
     const raw = JSON.parse(localStorage.getItem(window.CART_KEY) || "[]");
     return Array.isArray(raw)
-      ? raw.filter(l => window.byId(l.id) && l.qty > 0).map(l => ({ id: l.id, qty: l.qty | 0 }))
+      ? raw.filter(l => window.byId(l.id) && l.qty > 0)
+            .map(l => ({ id: l.id, size: l.size || null, qty: l.qty | 0 }))
       : [];
   } catch { return []; }
 };

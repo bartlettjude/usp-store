@@ -30,12 +30,7 @@
   const soldout  = p.status === "soldout";
   const lastcall = p.status === "lastcall";
 
-  const SIZES = {
-    tee:    ["S", "M", "L", "XL", "2XL", "3XL"],
-    hoodie: ["S", "M", "L", "XL", "2XL", "3XL"],
-    hat:    ["One Size"],
-  };
-  const sizes = SIZES[p.cat] || null;
+  const sizes = sizesOf(p);   // shared source (live Shopify variants / data.js fallback)
 
   const DESC = {
     tee:     "Soft, heavyweight cotton with a true-to-size unisex fit. Screen-printed loud, made to be worn 'til it's vintage.",
@@ -128,18 +123,20 @@
   document.getElementById("qtyDec").addEventListener("click", () => { if (qty > 1) { qty--; qtyVal.textContent = qty; } });
 
   /* ---- size picker ---- */
+  let selectedSize = sizes ? sizes[0] : null;
   const sizeRow = document.getElementById("sizeRow");
   sizeRow?.addEventListener("click", (e) => {
     const b = e.target.closest(".size-btn");
     if (!b) return;
     sizeRow.querySelectorAll(".size-btn").forEach(x => x.classList.remove("is-active"));
     b.classList.add("is-active");
+    selectedSize = b.dataset.size;
   });
 
   /* ---- add to bag ---- */
   document.getElementById("pdpAdd").addEventListener("click", () => {
     if (soldout) return;
-    for (let i = 0; i < qty; i++) addToCart(p.id);
+    for (let i = 0; i < qty; i++) addToCart(p.id, selectedSize);
     openCart();
   });
 

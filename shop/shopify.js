@@ -62,13 +62,39 @@
     return t ? t.slice(prefix.length).trim().toLowerCase() : null;
   }
 
+  // A variant's size = its "Size" option value (falls back to the variant title
+  // for a multi-variant product with no explicitly-named Size option).
+  function sizeOf(vNode, multi) {
+    const opt = (vNode.selectedOptions || []).find((o) => o.name.toLowerCase() === "size");
+    if (opt) return opt.value;
+    return multi && vNode.title && vNode.title !== "Default Title" ? vNode.title : null;
+  }
+
+  // Canonical apparel size order, so the picker always reads S → 3XL no matter
+  // what order Shopify returns the variants in. Unknown sizes sort to the end.
+  const SIZE_RANK = { xxs: 0, xs: 1, s: 2, m: 3, l: 4, xl: 5, "2xl": 6, xxl: 6, "3xl": 7, xxxl: 7, "4xl": 8, "5xl": 9 };
+  const sizeRank = (s) => {
+    const k = String(s).toLowerCase().replace(/[\s.]/g, "");
+    return k in SIZE_RANK ? SIZE_RANK[k] : 99;
+  };
+
+  // Last-resort category guess from the title, used only when a product has no
+  // productType and no `cat:` tag — keeps e.g. a bare "…Tee" out of Accessories.
+  function catFromTitle(title) {
+    const t = (title || "").toLowerCase();
+    if (/\b(tee|t-shirt|tshirt|shirt)\b/.test(t)) return "tee";
+    if (/\b(hoodie|sweatshirt|crewneck)\b/.test(t)) return "hoodie";
+    if (/\b(hat|cap|beanie)\b/.test(t)) return "hat";
+    return null;
+  }
+
   function mapProduct(node) {
     const tags = (node.tags || []).map(String);
     const variant = node.variants?.edges?.[0]?.node;
     const type = (node.productType || "").toLowerCase();
 
-    // category: explicit `cat:xx` tag wins, else productType, else accessories
-    const cat = tagValue(tags, "cat:") || CAT_FROM_TYPE[type] || "acc";
+    // category: explicit `cat:xx` tag wins, else productType, else title guess, else accessories
+    const cat = tagValue(tags, "cat:") || CAT_FROM_TYPE[type] || catFromTitle(node.title) || "acc";
     // kind: explicit `kind:xx` tag wins, else derived from type
     const kind = tagValue(tags, "kind:") || KIND_FROM_TYPE[type] || undefined;
     // venue: `venue:xx` tag (matches data.js VENUES keys); defaults to Union Stage
@@ -95,10 +121,24 @@
     const featured = node.featuredImage?.url;
     const photos = [...new Set(featured ? [featured, ...all] : all)];
 
+    // Per-size variants → size picker + per-size checkout. Products with no Size
+    // option (e.g. the tote) get no sizes and check out as their single variant.
+    const variantNodes = (node.variants?.edges || []).map((e) => e.node);
+    const multi = variantNodes.length > 1;
+    const variants = variantNodes.map((vn) => ({
+      size: sizeOf(vn, multi),
+      variantId: vn.id,
+      available: vn.availableForSale,
+    }));
+    const sizes = variants.map((v) => v.size).filter(Boolean)
+      .sort((a, b) => sizeRank(a) - sizeRank(b));
+
     const variantId = variant?.id || null;
     return {
       id: hashId(variantId || node.id),
-      variantId,                                   // Shopify gid — used at checkout
+      variantId,                                   // first variant — used for sizeless items
+      variants,                                    // [{size, variantId, available}] — checkout uses this
+      sizes: sizes.length ? sizes : undefined,     // drives sizesOf() → the size picker
       name: node.title,
       venue,
       cat,
@@ -110,6 +150,15 @@
       meta,                                        // card subtitle; undefined -> cotton default
     };
   }
+
+  // Resolve a cart line's size to the right Shopify variant gid for checkout.
+  window.variantIdFor = function (p, size) {
+    if (p && p.variants && p.variants.length) {
+      const m = (size && p.variants.find((v) => v.size === size)) || p.variants[0];
+      return m ? m.variantId : null;
+    }
+    return (p && p.variantId) || null;
+  };
 
   /* ======== 3. STOREFRONT API FETCH ========================================== */
   /* `quantityAvailable` needs the `unauthenticated_read_product_inventory`
@@ -126,8 +175,9 @@
           metafield(namespace:"custom", key:"subtitle"){ value }
           featuredImage{ url }
           images(first:10){ edges{ node{ url } } }
-          variants(first:1){ edges{ node{
-            id availableForSale${withInventory ? " quantityAvailable" : ""}
+          variants(first:25){ edges{ node{
+            id title availableForSale${withInventory ? " quantityAvailable" : ""}
+            selectedOptions{ name value }
             price{ amount currencyCode }
           }}}
         }}
@@ -203,7 +253,8 @@
     const cartLines = lines
       .map((l) => {
         const p = window.byId(l.id);
-        return p && p.variantId ? { merchandiseId: p.variantId, quantity: l.qty } : null;
+        const vid = p ? window.variantIdFor(p, l.size) : null;
+        return vid ? { merchandiseId: vid, quantity: l.qty } : null;
       })
       .filter(Boolean);
     if (!cartLines.length) return null;

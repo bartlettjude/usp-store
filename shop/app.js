@@ -34,8 +34,17 @@ function cardHTML(p) {
   const mediaMod = p.kind === "poster" ? "card__media--poster"
                  : p.kind === "sticker" ? "card__media--sticker"
                  : p.kind === "print"   ? "card__media--print" : "";
+  const sizes = sizesOf(p);
+  // Inline size tray — hidden until "Add +" is tapped (see grid click handler).
+  const sizeTray = (sizes && !soldout) ? `
+        <div class="card__sizes" data-id="${p.id}">
+          <span class="card__sizes-label">Pick a size</span>
+          <div class="card__sizes-row">
+            ${sizes.map(s => `<button class="size-chip" data-id="${p.id}" data-size="${s}">${s}</button>`).join("")}
+          </div>
+        </div>` : "";
   return `
-    <article class="card ${soldout ? "is-soldout" : ""}" style="--card-accent:var(--base-light)" data-venue="${p.venue}">
+    <article class="card ${soldout ? "is-soldout" : ""}" style="--card-accent:var(--base-light)" data-id="${p.id}" data-venue="${p.venue}">
       <div class="card__media ${mediaMod}">
         <img src="${photo}" alt="${p.name}" />
         ${stamp}
@@ -45,10 +54,10 @@ function cardHTML(p) {
         <p class="card__meta">${meta}</p>
         <div class="card__foot">
           <span class="card__price">$${p.price}</span>
-          <button class="btn-add" data-id="${p.id}">
+          <button class="btn-add" data-id="${p.id}"${sizes && !soldout ? ' aria-expanded="false"' : ''}>
             ${soldout ? "Sold Out" : "Add +"}
           </button>
-        </div>
+        </div>${sizeTray}
       </div>
     </article>`;
 }
@@ -79,26 +88,26 @@ function showToast(msg) {
   toastTimer = setTimeout(() => toast.classList.remove("show"), 1600);
 }
 
-function addToCart(id) {
-  const line = cart.find(l => l.id === id);
+function addToCart(id, size = null) {
+  const line = cart.find(l => l.id === id && (l.size || null) === size);
   if (line) line.qty += 1;
-  else cart.push({ id, qty: 1 });
+  else cart.push({ id, size, qty: 1 });
   saveCart();
   syncCart();
-  showToast("in the bag ✓");
+  showToast(size ? `${size} in the bag ✓` : "in the bag ✓");
 }
 
-function setQty(id, delta) {
-  const line = cart.find(l => l.id === id);
+function setQty(id, size, delta) {
+  const line = cart.find(l => l.id === id && (l.size || null) === size);
   if (!line) return;
   line.qty += delta;
-  if (line.qty <= 0) cart = cart.filter(l => l.id !== id);
+  if (line.qty <= 0) cart = cart.filter(l => l !== line);
   saveCart();
   syncCart();
 }
 
-function removeLine(id) {
-  cart = cart.filter(l => l.id !== id);
+function removeLine(id, size) {
+  cart = cart.filter(l => !(l.id === id && (l.size || null) === size));
   saveCart();
   syncCart();
 }
@@ -106,14 +115,15 @@ function removeLine(id) {
 function lineHTML(line) {
   const p = byId(line.id);
   const v = VENUES[p.venue];
+  const sizeTag = line.size ? ` · Size ${line.size}` : "";
   return `
-    <li class="line" data-id="${p.id}">
+    <li class="line" data-id="${p.id}" data-size="${line.size || ""}">
       <div class="line__thumb" style="--card-accent:var(--base-light)">
         <img src="${photoOf(p)}" alt="" />
       </div>
       <div class="line__info">
         <p class="line__name">${p.name}</p>
-        <p class="line__venue">${v.name} · ${money(p.price)}</p>
+        <p class="line__venue">${v.name}${sizeTag} · ${money(p.price)}</p>
         <div class="line__qty">
           <button class="qty-btn" data-act="dec" aria-label="Decrease quantity">–</button>
           <span class="qty-val">${line.qty}</span>
@@ -137,21 +147,57 @@ function syncCart() {
 function openCart()  { drawer.classList.add("open"); overlay.classList.add("show"); drawer.setAttribute("aria-hidden", "false"); }
 function closeCart() { drawer.classList.remove("open"); overlay.classList.remove("show"); drawer.setAttribute("aria-hidden", "true"); }
 
-/* ---- Add-to-cart from grid ---- */
+/* ---- Add-to-cart from grid ----
+   Sized products: "Add +" reveals an inline size tray on the card; tapping a
+   size adds it and closes the tray — all without leaving the page. Sizeless
+   products add straight to the cart on the first tap. ---- */
+function closePickers(except) {
+  grid?.querySelectorAll(".card.is-picking").forEach(c => {
+    if (c === except) return;
+    c.classList.remove("is-picking");
+    c.querySelector(".btn-add")?.setAttribute("aria-expanded", "false");
+  });
+}
+
 grid?.addEventListener("click", (e) => {
+  // 1) A size chip inside an open tray → add that size, then close.
+  const chip = e.target.closest(".size-chip");
+  if (chip) {
+    addToCart(Number(chip.dataset.id), chip.dataset.size);
+    closePickers();
+    return;
+  }
+  // 2) The Add button.
   const btn = e.target.closest(".btn-add");
   if (!btn || btn.closest(".is-soldout")) return;
-  addToCart(Number(btn.dataset.id));
+  const id = Number(btn.dataset.id);
+  const sizes = sizesOf(byId(id));
+  if (sizes) {
+    const card = btn.closest(".card");
+    const open = card.classList.contains("is-picking");
+    closePickers(open ? null : card);       // close others; toggle this one
+    card.classList.toggle("is-picking", !open);
+    btn.setAttribute("aria-expanded", String(!open));
+    return;
+  }
+  addToCart(id, null);
+});
+
+// Tapping elsewhere on the page closes any open size tray.
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".card")) closePickers();
 });
 
 /* ---- Cart line controls (delegated) ---- */
 cartItems.addEventListener("click", (e) => {
   const btn = e.target.closest("[data-act]");
   if (!btn) return;
-  const id = Number(btn.closest(".line").dataset.id);
-  if (btn.dataset.act === "inc") setQty(id, 1);
-  else if (btn.dataset.act === "dec") setQty(id, -1);
-  else if (btn.dataset.act === "remove") removeLine(id);
+  const li = btn.closest(".line");
+  const id = Number(li.dataset.id);
+  const size = li.dataset.size || null;
+  if (btn.dataset.act === "inc") setQty(id, size, 1);
+  else if (btn.dataset.act === "dec") setQty(id, size, -1);
+  else if (btn.dataset.act === "remove") removeLine(id, size);
 });
 
 /* ---- Open / close ---- */
