@@ -358,6 +358,9 @@ button { font: inherit; cursor: inherit; }
 }
 .footer__logo img { height: 44px; margin-bottom: 1rem; }
 .footer__tag { font-family: var(--font-body); font-style: italic; font-weight: 700; text-transform: lowercase; color: var(--accent); font-size: 1rem; line-height: 1.4; }
+.footer__social { margin-top: 1.1rem; font-family: var(--font-header); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.5px; }
+.footer__social a { opacity: 0.85; transition: opacity .2s; }
+.footer__social a:hover { opacity: 1; }
 .footer__col h4 {
   font-family: var(--font-header); text-transform: uppercase; font-size: 0.8rem;
   letter-spacing: 1px; margin-bottom: 1rem; color: var(--accent);
