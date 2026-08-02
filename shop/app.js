@@ -40,7 +40,10 @@ function cardHTML(p) {
         <div class="card__sizes" data-id="${p.id}">
           <span class="card__sizes-label">Pick a size</span>
           <div class="card__sizes-row">
-            ${sizes.map(s => `<button class="size-chip" data-id="${p.id}" data-size="${s}">${s}</button>`).join("")}
+            ${sizes.map(s => {
+              const avail = sizeAvailable(p, s);
+              return `<button class="size-chip${avail ? "" : " is-out"}" data-id="${p.id}" data-size="${s}"${avail ? "" : ' disabled aria-disabled="true"'}>${s}</button>`;
+            }).join("")}
           </div>
         </div>` : "";
   return `

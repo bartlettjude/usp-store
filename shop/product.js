@@ -54,11 +54,16 @@
     ? `<img class="pdp__stamp" src="${STAMP[p.status]}" alt="${soldout ? "Sold out" : "Last call"}" />`
     : "";
 
+  // Default the selection to the first in-stock size (fall back to the first).
+  const firstAvail = sizes ? (sizes.find(s => sizeAvailable(p, s)) || sizes[0]) : null;
   const sizeBlock = sizes ? `
     <div class="pdp__field">
       <span class="pdp__label">Size</span>
       <div class="size-row" id="sizeRow">
-        ${sizes.map((s, i) => `<button class="size-btn${i === 0 ? " is-active" : ""}" data-size="${s}">${s}</button>`).join("")}
+        ${sizes.map((s) => {
+          const avail = sizeAvailable(p, s);
+          return `<button class="size-btn${s === firstAvail ? " is-active" : ""}${avail ? "" : " is-out"}" data-size="${s}"${avail ? "" : ' disabled aria-disabled="true"'}>${s}</button>`;
+        }).join("")}
       </div>
     </div>` : "";
 
@@ -123,7 +128,7 @@
   document.getElementById("qtyDec").addEventListener("click", () => { if (qty > 1) { qty--; qtyVal.textContent = qty; } });
 
   /* ---- size picker ---- */
-  let selectedSize = sizes ? sizes[0] : null;
+  let selectedSize = firstAvail;
   const sizeRow = document.getElementById("sizeRow");
   sizeRow?.addEventListener("click", (e) => {
     const b = e.target.closest(".size-btn");

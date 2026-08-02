@@ -320,6 +320,10 @@ button { font: inherit; cursor: inherit; }
   padding: 0.4rem 0.5rem; cursor: pointer; transition: all .15s;
 }
 .size-chip:hover { background: var(--base-dark); color: var(--base-light); }
+.size-chip.is-out {
+  opacity: 0.4; text-decoration: line-through; cursor: not-allowed;
+  pointer-events: none; background: var(--base-light); color: var(--base-dark);
+}
 @keyframes sizes-in { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
 
 /* ============================================================
@@ -584,6 +588,9 @@ button { font: inherit; cursor: inherit; }
 }
 .size-btn:hover { background: var(--bg-gray); }
 .size-btn.is-active { background: var(--base-dark); color: var(--base-light); }
+.size-btn.is-out {
+  opacity: 0.4; text-decoration: line-through; cursor: not-allowed; pointer-events: none;
+}
 
 .pdp__buy { display: flex; gap: 0.75rem; align-items: stretch; margin-bottom: 1.75rem; }
 .pdp__qty { display: flex; align-items: center; gap: 0.5rem; border: 2px solid var(--base-dark); padding: 0 0.6rem; }

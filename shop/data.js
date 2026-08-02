@@ -45,6 +45,15 @@ window.photoOf = (p) =>
 // Sizes for a product, or null if it has none (e.g. the tote). Works for both
 // the live Shopify catalog (variants → sizes) and this offline fallback.
 window.sizesOf = (p) => (p && p.sizes && p.sizes.length) ? p.sizes : null;
+// Is a given size in stock? Live products carry per-variant availability; the
+// offline fallback has no variants, so its sizes are always treated as in-stock.
+window.sizeAvailable = (p, size) => {
+  if (p && p.variants && p.variants.length) {
+    const v = p.variants.find(x => x.size === size);
+    return v ? v.available !== false : true;
+  }
+  return true;
+};
 
 /* ---- cart storage (shared keys) ---- */
 window.CART_KEY  = "usp-cart";       // [{id, size, qty}] — id+size is the line identity
